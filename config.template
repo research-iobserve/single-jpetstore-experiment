@@ -1,0 +1,15 @@
+## common
+# data location
+DATA="$BASE/data"
+PCM="$BASE/pcm"
+WORKLOADS=$BASE/../../workloads/jpetstore-selenium-workloads/
+# iobserve analysis
+ANALYSIS_CLI="$BASE/../analysis.cli-0.0.2-SNAPSHOT/bin/analysis.cli"
+
+## kieker analysis
+KIEKER=$BASE/../../kieker-1.12/
+
+## analysis
+# visuliazation
+UBM_VISUALIZATION=$BASE/../../iobserve-ui-user-behavior/code/docker-compose.yml
+
