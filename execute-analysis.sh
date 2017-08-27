@@ -69,18 +69,14 @@ done
 
 echo "Both web services are up. Press return to contiune"
 
-read
-
 # run analysis
 echo "------------------------"
 echo "Run analysis"
 echo "------------------------"
 
-$ANALYSIS_CLI -i "$DATA" -p "$PCM" -t 1 -v 4 -u "$URL_LOGIC" 
+$ANALYSIS_CLI -i "$DATA" -p "$PCM" -t 1 -v 4 -u "$URL_LOGIC"
 
 echo "Analysis complete. Press return to contiune"
-
-read
 
 # stop setup
 echo "------------------------"
