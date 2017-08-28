@@ -15,7 +15,7 @@ if [ "$1" == "xmeans" ] ; then
 	echo "Running xmeans"
 	MODE="$1"
 elif [ "$1" == "em" ] ; then
-	echo "Runnong EM"
+	echo "Running EM"
 	MODE="$1"
 else
 	echo "Unknown mode $1"
@@ -40,6 +40,6 @@ echo "------------------------"
 echo "Run analysis"
 echo "------------------------"
 
-$ANALYSIS_CLI -i "$DATA" -p "$PCM" -t 1 -v 4 -m $MODE -o "${BASE}/graph-$MODE-"
+$ANALYSIS_CLI -i "$DATA" -p "$PCM" -t 1 -v 3 -m $MODE -o "${BASE}/graph-$MODE-"
 
 # end

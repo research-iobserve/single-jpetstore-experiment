@@ -1,0 +1,110 @@
+{
+  "name" : "Fish Lover",
+  "entryCallNodes" : [ {
+    "signature" : "Catalog()",
+    "entryCallInformation" : [ ]
+  }, {
+    "signature" : "Catalog.viewCategory()",
+    "entryCallInformation" : [ ]
+  }, {
+    "signature" : "Catalog.viewItem()",
+    "entryCallInformation" : [ ]
+  }, {
+    "signature" : "Catalog()",
+    "entryCallInformation" : [ ]
+  }, {
+    "signature" : "Catalog.viewProduct()",
+    "entryCallInformation" : [ ]
+  } ],
+  "entryCallEdges" : [ {
+    "source" : {
+      "signature" : "Catalog()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 1.0
+  }, {
+    "source" : {
+      "signature" : "Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 5.0
+  }, {
+    "source" : {
+      "signature" : "Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "Catalog.viewItem()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 7.0
+  }, {
+    "source" : {
+      "signature" : "Catalog.viewItem()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "Catalog()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "Catalog.viewItem()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "Catalog()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "Catalog.viewItem()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "Catalog()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "Catalog()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 3.0
+  } ]
+}

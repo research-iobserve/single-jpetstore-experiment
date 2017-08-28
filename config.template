@@ -10,6 +10,11 @@ ANALYSIS_CLI="$BASE/../analysis.cli-0.0.2-SNAPSHOT/bin/analysis.cli"
 KIEKER=$BASE/../../kieker-1.12/
 
 ## analysis
-# visuliazation
+# visualization
 UBM_VISUALIZATION=$BASE/../../iobserve-ui-user-behavior/code/docker-compose.yml
 
+## evaluation
+# user behavior comparison tool
+EVALUATE_BEHAVIOR=$BASE../evaluate-user-behaviors-0.0.2-SNAPSHOT/bin/evaluate-user-behaviors
+
+# end
