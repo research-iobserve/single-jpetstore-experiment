@@ -1,18 +1,10 @@
 {
-  "name" : "Fish Lover",
+  "name" : "New Customer",
 
-Catalog()
-Catalog.viewCategory() - FISH 
-Catalog().viewProduct()
-Catalog().viewItem() - FI-SW-01 (8 times)
-
-- signs into the shop
-- goes to the Category FISH,
-- adds one additional fish of the type FI-FW-01 to the cart. 
-
-- checkout,
-- creates a new order
-- opens the order view
+The new customer enters the store and registers as new customer.
+he logs into the store with his new account 
+buys an item from the product RP-SN-01, which
+belongs to the category REPTILES.
 
   "entryCallNodes" : [ {
     "signature" : "Catalog()",

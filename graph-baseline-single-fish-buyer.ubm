@@ -1,18 +1,10 @@
 {
-  "name" : "Fish Lover",
+  "name" : "Single Fish Buyer",
 
-Catalog()
-Catalog.viewCategory() - FISH 
-Catalog().viewProduct()
-Catalog().viewItem() - FI-SW-01 (8 times)
-
-- signs into the shop
-- goes to the Category FISH,
-- adds one additional fish of the type FI-FW-01 to the cart. 
-
-- checkout,
-- creates a new order
-- opens the order view
+The single fish buyer selects the category FISH, navigates to the view for
+productFI-SW-01, and adds the first item listed to the cart. He then proceeds to checkout
+by first logging in and then ordering the item from his cart. The single fish buyer uses the
+same transitions as the Cat Lover and the Fish Lover, but with different transition counts.
 
   "entryCallNodes" : [ {
     "signature" : "Catalog()",

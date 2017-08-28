@@ -1,18 +1,11 @@
 {
-  "name" : "Fish Lover",
+  "name" : "Single Reptile Buyer",
 
-Catalog()
-Catalog.viewCategory() - FISH 
-Catalog().viewProduct()
-Catalog().viewItem() - FI-SW-01 (8 times)
-
-- signs into the shop
-- goes to the Category FISH,
-- adds one additional fish of the type FI-FW-01 to the cart. 
-
-- checkout,
-- creates a new order
-- opens the order view
+The single reptile buyer acts like the single fish buyer, but goes to the
+category REPTILE and orders an item of the product RP-SN-01. Both single buyer users buy
+exactly one item as per definition. Therefore the distance between both is much smaller
+than the distance between the fish-lover and the cat-lover. We expect that both single buyer
+user types will be merged, if the clustering has low input range.
 
   "entryCallNodes" : [ {
     "signature" : "Catalog()",

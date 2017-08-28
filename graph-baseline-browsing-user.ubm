@@ -1,18 +1,15 @@
 {
-  "name" : "Fish Lover",
+  "name" : "Browsing User",
 
-Catalog()
-Catalog.viewCategory() - FISH 
-Catalog().viewProduct()
-Catalog().viewItem() - FI-SW-01 (8 times)
+visits different categories, products, and items but never buys anything.
+He therefore does not take the path of the ordering process.
+- navigates to the REPTILES category
+- product view for item RP-SN-01.
 
-- signs into the shop
-- goes to the Category FISH,
-- adds one additional fish of the type FI-FW-01 to the cart. 
-
-- checkout,
-- creates a new order
-- opens the order view
+- browsing different products and items from the from the category BIRDS.
+  - visiting the category four times
+- uses the search bar to query for fishes.
+- finds one fish product and its item
 
   "entryCallNodes" : [ {
     "signature" : "Catalog()",

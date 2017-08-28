@@ -1,18 +1,9 @@
 {
-  "name" : "Fish Lover",
+  "name" : "Account Manager",
 
-Catalog()
-Catalog.viewCategory() - FISH 
-Catalog().viewProduct()
-Catalog().viewItem() - FI-SW-01 (8 times)
-
-- signs into the shop
-- goes to the Category FISH,
-- adds one additional fish of the type FI-FW-01 to the cart. 
-
-- checkout,
-- creates a new order
-- opens the order view
+login
+change contact information in the account management
+inspecting one of his prior orders.
 
   "entryCallNodes" : [ {
     "signature" : "Catalog()",
