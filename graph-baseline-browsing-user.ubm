@@ -1,121 +1,135 @@
 {
   "name" : "Browsing User",
-
-visits different categories, products, and items but never buys anything.
-He therefore does not take the path of the ordering process.
-- navigates to the REPTILES category
-- product view for item RP-SN-01.
-
-- browsing different products and items from the from the category BIRDS.
-  - visiting the category four times
-- uses the search bar to query for fishes.
-- finds one fish product and its item
-
   "entryCallNodes" : [ {
-    "signature" : "Catalog()",
+    "signature" : "jpetstore.actions.Catalog.index()",
     "entryCallInformation" : [ ]
   }, {
-    "signature" : "Catalog.viewCategory()",
-    "entryCallInformation" : [ ]
+    "signature" : "jpetstore.actions.Catalog.viewCategory()",
+    "entryCallInformation" : [
+       {"informationSignature":"REPTILES","informationCode":1},
+       {"informationSignature":"REPTILES","informationCode":4}
+    ]
   }, {
-    "signature" : "Catalog.viewItem()",
-    "entryCallInformation" : [ ]
+    "signature" : "jpetstore.actions.Catalog.viewProduct()",
+    "entryCallInformation" : [
+       {"informationSignature":"FI-FW-02","informationCode":1},
+       {"informationSignature":"RP-SN-01","informationCode":3},
+       {"informationSignature":"AV-SB-02","informationCode":3},
+       {"informationSignature":"K9-BD-01","informationCode":1},
+       {"informationSignature":"AV-CB-01","informationCode":1}
+    ]
   }, {
-    "signature" : "Catalog()",
-    "entryCallInformation" : [ ]
+    "signature" : "jpetstore.actions.Catalog.viewItem()",
+    "entryCallInformation" : [
+       {"informationSignature":"EST-21","informationCode":1},
+       {"informationSignature":"EST-7","informationCode":1},
+       {"informationSignature":"EST-18","informationCode":1},
+       {"informationSignature":"EST-19","informationCode":2},
+       {"informationSignature":"EST-12","informationCode":2}
+    ]
   }, {
-    "signature" : "Catalog.viewProduct()",
+    "signature" : "jpetstore.actions.Catalog.search()",
     "entryCallInformation" : [ ]
   } ],
   "entryCallEdges" : [ {
     "source" : {
-      "signature" : "Catalog()",
+      "signature" : "jpetstore.actions.Catalog.index()",
       "entryCallInformation" : [ ]
     },
     "target" : {
-      "signature" : "Catalog.viewCategory()",
+      "signature" : "jpetstore.actions.Catalog.index()",
       "entryCallInformation" : [ ]
     },
     "calls" : 1.0
   }, {
     "source" : {
-      "signature" : "Catalog.viewCategory()",
+      "signature" : "jpetstore.actions.Catalog.index()",
       "entryCallInformation" : [ ]
     },
     "target" : {
-      "signature" : "Catalog.viewProduct()",
+      "signature" : "jpetstore.actions.Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 1.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.viewProduct()",
       "entryCallInformation" : [ ]
     },
     "calls" : 5.0
   }, {
     "source" : {
-      "signature" : "Catalog.viewProduct()",
+      "signature" : "jpetstore.actions.Catalog.viewProduct()",
       "entryCallInformation" : [ ]
     },
     "target" : {
-      "signature" : "Catalog.viewItem()",
+      "signature" : "jpetstore.actions.Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.search()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.search()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.search()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.viewItem()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.viewItem()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.search()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.viewItem()",
       "entryCallInformation" : [ ]
     },
     "calls" : 7.0
   }, {
     "source" : {
-      "signature" : "Catalog.viewItem()",
+      "signature" : "jpetstore.actions.Catalog.viewItem()",
       "entryCallInformation" : [ ]
     },
     "target" : {
-      "signature" : "Catalog()",
+      "signature" : "jpetstore.actions.Catalog.viewProduct()",
       "entryCallInformation" : [ ]
     },
     "calls" : 2.0
-  }, {
-    "source" : {
-      "signature" : "Catalog.viewItem()",
-      "entryCallInformation" : [ ]
-    },
-    "target" : {
-      "signature" : "Catalog.viewProduct()",
-      "entryCallInformation" : [ ]
-    },
-    "calls" : 2.0
-  }, {
-    "source" : {
-      "signature" : "Catalog()",
-      "entryCallInformation" : [ ]
-    },
-    "target" : {
-      "signature" : "Catalog.viewProduct()",
-      "entryCallInformation" : [ ]
-    },
-    "calls" : 2.0
-  }, {
-    "source" : {
-      "signature" : "Catalog.viewProduct()",
-      "entryCallInformation" : [ ]
-    },
-    "target" : {
-      "signature" : "Catalog.viewCategory()",
-      "entryCallInformation" : [ ]
-    },
-    "calls" : 2.0
-  }, {
-    "source" : {
-      "signature" : "Catalog.viewItem()",
-      "entryCallInformation" : [ ]
-    },
-    "target" : {
-      "signature" : "Catalog.viewCategory()",
-      "entryCallInformation" : [ ]
-    },
-    "calls" : 2.0
-  }, {
-    "source" : {
-      "signature" : "Catalog()",
-      "entryCallInformation" : [ ]
-    },
-    "target" : {
-      "signature" : "Catalog()",
-      "entryCallInformation" : [ ]
-    },
-    "calls" : 3.0
   } ]
 }

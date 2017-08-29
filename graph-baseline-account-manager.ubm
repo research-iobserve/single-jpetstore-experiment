@@ -1,115 +1,93 @@
 {
   "name" : "Account Manager",
-
-login
-change contact information in the account management
-inspecting one of his prior orders.
-
   "entryCallNodes" : [ {
-    "signature" : "Catalog()",
+    "signature" : "jpetstore.actions.Account.editAccountForm()",
     "entryCallInformation" : [ ]
   }, {
-    "signature" : "Catalog.viewCategory()",
+    "signature" : "jpetstore.actions.Account.login()",
     "entryCallInformation" : [ ]
   }, {
-    "signature" : "Catalog.viewItem()",
+    "signature" : "jpetstore.actions.Account.signonForm()",
     "entryCallInformation" : [ ]
   }, {
-    "signature" : "Catalog()",
+    "signature" : "jpetstore.actions.Catalog.index()",
     "entryCallInformation" : [ ]
   }, {
-    "signature" : "Catalog.viewProduct()",
+    "signature" : "jpetstore.actions.Order.listOrders()",
+    "entryCallInformation" : [ ]
+  }, {
+    "signature" : "jpetstore.actions.Order.viewOrder()",
     "entryCallInformation" : [ ]
   } ],
   "entryCallEdges" : [ {
     "source" : {
-      "signature" : "Catalog()",
+      "signature" : "jpetstore.actions.Account.editAccountForm()",
       "entryCallInformation" : [ ]
     },
     "target" : {
-      "signature" : "Catalog.viewCategory()",
+      "signature" : "jpetstore.actions.Account.login()",
       "entryCallInformation" : [ ]
     },
     "calls" : 1.0
   }, {
     "source" : {
-      "signature" : "Catalog.viewCategory()",
+      "signature" : "jpetstore.actions.Account.login()",
       "entryCallInformation" : [ ]
     },
     "target" : {
-      "signature" : "Catalog.viewProduct()",
+      "signature" : "jpetstore.actions.Catalog.index()",
       "entryCallInformation" : [ ]
     },
-    "calls" : 5.0
+    "calls" : 1.0
   }, {
     "source" : {
-      "signature" : "Catalog.viewProduct()",
+      "signature" : "jpetstore.actions.Catalog.index()",
       "entryCallInformation" : [ ]
     },
     "target" : {
-      "signature" : "Catalog.viewItem()",
+      "signature" : "jpetstore.actions.Account.editAccountForm()",
       "entryCallInformation" : [ ]
     },
-    "calls" : 7.0
+    "calls" : 1.0
   }, {
     "source" : {
-      "signature" : "Catalog.viewItem()",
+      "signature" : "jpetstore.actions.Catalog.index()",
       "entryCallInformation" : [ ]
     },
     "target" : {
-      "signature" : "Catalog()",
+      "signature" : "jpetstore.actions.Account.signonForm()",
       "entryCallInformation" : [ ]
     },
-    "calls" : 2.0
+    "calls" : 1.0
   }, {
     "source" : {
-      "signature" : "Catalog.viewItem()",
+      "signature" : "jpetstore.actions.Account.signonForm()",
       "entryCallInformation" : [ ]
     },
     "target" : {
-      "signature" : "Catalog.viewProduct()",
+      "signature" : "jpetstore.actions.Account.login()",
       "entryCallInformation" : [ ]
     },
-    "calls" : 2.0
+    "calls" : 1.0
   }, {
     "source" : {
-      "signature" : "Catalog()",
+      "signature" : "jpetstore.actions.Account.editAccountForm()",
       "entryCallInformation" : [ ]
     },
     "target" : {
-      "signature" : "Catalog.viewProduct()",
+      "signature" : "jpetstore.actions.Order.listOrders()",
       "entryCallInformation" : [ ]
     },
-    "calls" : 2.0
+    "calls" : 1.0
   }, {
     "source" : {
-      "signature" : "Catalog.viewProduct()",
+      "signature" : "jpetstore.actions.Order.listOrders()",
       "entryCallInformation" : [ ]
     },
     "target" : {
-      "signature" : "Catalog.viewCategory()",
+      "signature" : "jpetstore.actions.Order.viewOrder()",
       "entryCallInformation" : [ ]
     },
-    "calls" : 2.0
-  }, {
-    "source" : {
-      "signature" : "Catalog.viewItem()",
-      "entryCallInformation" : [ ]
-    },
-    "target" : {
-      "signature" : "Catalog.viewCategory()",
-      "entryCallInformation" : [ ]
-    },
-    "calls" : 2.0
-  }, {
-    "source" : {
-      "signature" : "Catalog()",
-      "entryCallInformation" : [ ]
-    },
-    "target" : {
-      "signature" : "Catalog()",
-      "entryCallInformation" : [ ]
-    },
-    "calls" : 3.0
+    "calls" : 1.0
   } ]
 }

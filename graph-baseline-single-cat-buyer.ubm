@@ -1,17 +1,17 @@
 {
-  "name" : "Single Reptile Buyer",
+  "name" : "Single Cat Buyer",
   "entryCallNodes" : [ {
     "signature" : "jpetstore.actions.Catalog.index()",
     "entryCallInformation" : [ ]
   }, {
     "signature" : "jpetstore.actions.Catalog.viewCategory()",
     "entryCallInformation" : [
-       {"informationSignature":"REPTILES","informationCode":1}
+       {"informationSignature":"CATS","informationCode":1}
     ]
   }, {
     "signature" : "jpetstore.actions.Catalog.viewProduct()",
     "entryCallInformation" : [
-       {"informationSignature":"RP-SN-01","informationCode":1}
+       {"informationSignature":"FI-SW-01","informationCode":1}
     ]
   }, {
     "signature" : "jpetstore.actions.Account.login()",
@@ -22,7 +22,7 @@
   }, {
     "signature" : "jpetstore.actions.Cart.addItemToCart()",
     "entryCallInformation" : [
-       {"informationSignature":"EST-11","informationCode":1}
+       {"informationSignature":"EST-1","informationCode":1}
     ]
   }, {
     "signature" : "jpetstore.actions.Order.newOrderForm()",
