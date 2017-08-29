@@ -54,6 +54,7 @@
       "entryCallInformation" : [ ]
     },
     "calls" : 1.0
+  }, {
     "source" : {
       "signature" : "jpetstore.actions.Catalog.viewProduct()",
       "entryCallInformation" : [ ]

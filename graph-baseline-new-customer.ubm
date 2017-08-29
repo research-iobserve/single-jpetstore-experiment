@@ -38,7 +38,6 @@
     "entryCallInformation" : [ ]
   } ],
   "entryCallEdges" : [ {
-  }, {
     "source" : {
       "signature" : "jpetstore.actions.Account.signonForm()",
       "entryCallInformation" : [ ]
@@ -78,6 +77,7 @@
       "entryCallInformation" : [ ]
     },
     "calls" : 1.0
+   }, {
     "source" : {
       "signature" : "jpetstore.actions.Catalog.viewProduct()",
       "entryCallInformation" : [ ]
