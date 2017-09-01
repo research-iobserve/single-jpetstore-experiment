@@ -2,6 +2,15 @@
 # data location
 DATA="$BASE/data"
 PCM="$BASE/pcm"
+# aggregations of comparison results
+AGGREGATE_DIR="$BASE/aggregates"
+# comparisons results
+COMPARISON_DIR="$BASE/comparisons"
+# ideal behavior models
+IDEAL_MODELS_DIR="$BASE/ideal-behavior-models"
+# analysis results
+RESULT_DIR="$BASE/results"
+#
 WORKLOADS=$BASE/../../workloads/jpetstore-selenium-workloads/
 # iobserve analysis
 ANALYSIS_CLI="$BASE/../analysis.cli-0.0.2-SNAPSHOT/bin/analysis.cli"

@@ -31,6 +31,16 @@
     "calls" : 1.0
   }, {
     "source" : {
+      "signature" : "jpetstore.actions.Catalog.index()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.index()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 1.0
+  }, {
+    "source" : {
       "signature" : "jpetstore.actions.Account.login()",
       "entryCallInformation" : [ ]
     },

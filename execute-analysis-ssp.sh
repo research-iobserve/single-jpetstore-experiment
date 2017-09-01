@@ -34,12 +34,15 @@ if [ ! -d $PCM ] ; then
 	echo "PCM directory missing"
 	exit 1
 fi
+if [ ! -d "$RESULT_DIR" ] ; then
+	mkdir "$RESULT_DIR"
+fi
 
 # run analysis
 echo "------------------------"
 echo "Run analysis"
 echo "------------------------"
 
-$ANALYSIS_CLI -i "$DATA" -p "$PCM" -t 1 -v 3 -m $MODE -o "${BASE}/graph-$MODE-"
+$ANALYSIS_CLI -i "$DATA" -p "$PCM" -t 1 -v 3 -m $MODE -o "${RESULT_DIR}/graph-$MODE-"
 
 # end

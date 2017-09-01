@@ -7,7 +7,7 @@
     "signature" : "jpetstore.actions.Catalog.viewCategory()",
     "entryCallInformation" : [
        {"informationSignature":"REPTILES","informationCode":1},
-       {"informationSignature":"REPTILES","informationCode":4}
+       {"informationSignature":"BIRDS","informationCode":4}
     ]
   }, {
     "signature" : "jpetstore.actions.Catalog.viewProduct()",

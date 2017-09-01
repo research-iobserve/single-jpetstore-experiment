@@ -23,7 +23,7 @@
   }, {
     "signature" : "jpetstore.actions.Catalog.viewProduct()",
     "entryCallInformation" : [ 
-       {"informationSignature":"FI-DSH-01","informationCode":9}
+       {"informationSignature":"FL-DSH-01","informationCode":9}
     ]
   }, {
     "signature" : "jpetstore.actions.Order.index()",
