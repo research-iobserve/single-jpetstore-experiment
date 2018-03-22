@@ -1,0 +1,135 @@
+{
+  "name" : "Browsing User",
+  "entryCallNodes" : [ {
+    "signature" : "jpetstore.actions.Catalog.index()",
+    "entryCallInformation" : [ ]
+  }, {
+    "signature" : "jpetstore.actions.Catalog.viewCategory()",
+    "entryCallInformation" : [
+       {"informationSignature":"categoryId","informationCode":"REPTILES","count":1},
+       {"informationSignature":"categoryId","informationCode":"REPTILES","count":4}
+    ]
+  }, {
+    "signature" : "jpetstore.actions.Catalog.viewProduct()",
+    "entryCallInformation" : [
+       {"informationSignature":"productId","informationCode":"FI-FW-02","count":1},
+       {"informationSignature":"productId","informationCode":"RP-SN-01","count":3},
+       {"informationSignature":"productId","informationCode":"AV-SB-02","count":3},
+       {"informationSignature":"productId","informationCode":"K9-BD-01","count":1},
+       {"informationSignature":"productId","informationCode":"AV-CB-01","count":1}
+    ]
+  }, {
+    "signature" : "jpetstore.actions.Catalog.viewItem()",
+    "entryCallInformation" : [
+       {"informationSignature":"itemId","informationCode":"EST-21","count":1},
+       {"informationSignature":"itemId","informationCode":"EST-7","count":1},
+       {"informationSignature":"itemId","informationCode":"EST-18","count":1},
+       {"informationSignature":"itemId","informationCode":"EST-19","count":2},
+       {"informationSignature":"itemId","informationCode":"EST-12","count":2}
+    ]
+  }, {
+    "signature" : "jpetstore.actions.Catalog.search()",
+    "entryCallInformation" : [ ]
+  } ],
+  "entryCallEdges" : [ {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.index()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.index()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 1.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.index()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 1.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 5.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.search()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.search()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.search()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.viewItem()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.viewCategory()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.viewItem()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.search()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.viewItem()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 7.0
+  }, {
+    "source" : {
+      "signature" : "jpetstore.actions.Catalog.viewItem()",
+      "entryCallInformation" : [ ]
+    },
+    "target" : {
+      "signature" : "jpetstore.actions.Catalog.viewProduct()",
+      "entryCallInformation" : [ ]
+    },
+    "calls" : 2.0
+  } ]
+}
