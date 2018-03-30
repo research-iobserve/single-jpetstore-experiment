@@ -22,19 +22,6 @@ KIEKER_DATA=`ls $DATA/$TYPE/`
 SOURCE="$DATA/$TYPE/$KIEKER_DATA"
 TARGET="$FIXED/$TYPE/$KIEKER_DATA"
 
-NUMBER=`tail -1 $SOURCE/kieker.map | sed 's/\$\([0-9]*\)=.*/\1/g'`
-
-NUMBER=`expr $NUMBER + 1`
-
-echo "\$$NUMBER=kieker.common.record.misc.EmptyRecord" >> $SOURCE/kieker.map
-
-LAST=`ls $SOURCE/kieker-* | sort | tail -1`
-cat << EOF >> $LAST
-\$$NUMBER;1497044035019376464
-EOF
-
-echo $LAST
-
 if [ -d $FIXED/$TYPE ] ; then
 	rm -rf $FIXED/$TYPE
 fi
