@@ -1,32 +1,36 @@
 #!/bin/bash
 
-BASE=$(cd "$(dirname "$0")"; pwd)
+BASE_DIR=$(cd "$(dirname "$0")"; pwd)
+
+if [ -f $BASE/config ] ; then
+	. $BASE/config
+else
+	echo "Missing configuration"
+	exit 1
+fi
 
 TYPE="$1"
-
-DATA="$BASE/data"
-FIXED="$BASE/fixed"
 
 if [ "$TYPE" == "" ] ; then
 	echo "type missing"
 	exit 1
 fi
 
-if [ ! -d "$DATA/$TYPE" ] ; then
-	echo "directory does not exist: $DATA/$TYPE"
+if [ ! -d "$DATA_DIR/$TYPE" ] ; then
+	echo "directory does not exist: $DATA_DIR/$TYPE"
 	exit 1
 fi
 
-KIEKER_DATA=`ls $DATA/$TYPE/`
+KIEKER_DATA_DIR=`ls $DATA_DIR/$TYPE/`
 
-SOURCE="$DATA/$TYPE/$KIEKER_DATA"
-TARGET="$FIXED/$TYPE/$KIEKER_DATA"
+SOURCE_DIR="$DATA_DIR/$TYPE/$KIEKER_DATA_DIR"
+TARGET_DIR="$FIXED_DIR/$TYPE/$KIEKER_DATA_DIR"
 
-if [ -d $FIXED/$TYPE ] ; then
-	rm -rf $FIXED/$TYPE
+if [ -d $FIXED_DIR/$TYPE ] ; then
+	rm -rf $FIXED_DIR/$TYPE
 fi
 
-mkdir -p $FIXED/$TYPE
+mkdir -p $FIXED_DIR/$TYPE
 
 cat << EOF > reconstructor.config
 ## The name of the Kieker instance.
@@ -35,11 +39,11 @@ kieker.monitoring.hostname=
 kieker.monitoring.metadata=true
 
 iobserve.service.reader=org.iobserve.service.source.FileSourceCompositeStage
-org.iobserve.service.source.FileSourceCompositeStage.sourceDirectories=$DATA/$TYPE/$KIEKER_DATA
+org.iobserve.service.source.FileSourceCompositeStage.sourceDirectories=$DATA_DIR/$TYPE/$KIEKER_DATA_DIR
 
 #####
 kieker.monitoring.writer=kieker.monitoring.writer.filesystem.FileWriter
-kieker.monitoring.writer.filesystem.FileWriter.customStoragePath=$FIXED/$TYPE
+kieker.monitoring.writer.filesystem.FileWriter.customStoragePath=$FIXED_DIR/$TYPE
 kieker.monitoring.writer.filesystem.FileWriter.charsetName=UTF-8
 kieker.monitoring.writer.filesystem.FileWriter.maxEntriesInFile=25000
 kieker.monitoring.writer.filesystem.FileWriter.maxLogSize=-1
@@ -54,6 +58,6 @@ kieker.monitoring.writer.filesystem.FileWriter.bufferSize=8192
 kieker.monitoring.writer.filesystem.FileWriter.compression=kieker.monitoring.writer.filesystem.compression.NoneCompressionFilter
 EOF
 
-$BASE/../reconstructor-0.0.3-SNAPSHOT/bin/reconstructor -c reconstructor.config
+$RECONSTRUCTOR -c reconstructor.config
 
 # end

@@ -2,20 +2,13 @@
 
 # execute setup
 
-BASE=$(cd "$(dirname "$0")"; pwd)/
+BASE_DIR=$(cd "$(dirname "$0")"; pwd)
 
-if [ -f $BASE/config ] ; then
-	. $BASE/config
+if [ -f $BASE_DIR/config ] ; then
+	. $BASE_DIR/config
 else
 	echo "Missing configuration"
 	exit 1
-fi
-
-TRACE_ANALYSIS=$KIEKER/bin/trace-analysis.sh
-DOT_PIC=$KIEKER/bin/dotPic-fileConverter.sh
-
-if [ ! -d $KIEKER ] ; then
-	echo "Missing kieker directory"
 fi
 
 if [ ! -x $TRACE_ANALYSIS ] ; then
@@ -29,9 +22,9 @@ if [ ! -x $DOT_PIC ] ; then
 fi
 
 # kieker analysis
-$TRACE_ANALYSIS -i $DATA/kieker-* --plot-Deployment-Component-Dependency-Graph --plot-Container-Dependency-Graph --plot-Assembly-Component-Dependency-Graph --plot-Aggregated-Deployment-Call-Tree -o analysis
+$TRACE_ANALYSIS -i $DATA_DIR/kieker-* --plot-Deployment-Component-Dependency-Graph --plot-Container-Dependency-Graph --plot-Assembly-Component-Dependency-Graph --plot-Aggregated-Deployment-Call-Tree -o analysis
 
-$DOT_PIC $BASE/analysis svg pdf
+$DOT_PIC $BASE_DIR/analysis svg pdf
 
 # end
 

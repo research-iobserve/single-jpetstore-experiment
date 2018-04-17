@@ -2,10 +2,10 @@
 
 # configuration
 
-BASE=$(cd "$(dirname "$0")"; pwd)/
+BASE_DIR=$(cd "$(dirname "$0")"; pwd)
 
-if [ -f $BASE/config ] ; then
-	. $BASE/config
+if [ -f $BASE_DIR/config ] ; then
+	. $BASE_DIR/config
 else
 	echo "Missing configuration"
 	exit 1
@@ -22,7 +22,7 @@ else
 	exit 1
 fi
 
-if [ ! -x $ANALYSIS_CLI ] ; then
+if [ ! -x $ANALYSIS ] ; then
 	echo "Missing analysis cli"
 	exit 1
 fi
@@ -43,6 +43,6 @@ echo "------------------------"
 echo "Run analysis"
 echo "------------------------"
 
-$ANALYSIS_CLI -i "$DATA" -p "$PCM" -t 1 -v 3 -m $MODE -o "${RESULT_DIR}/graph-$MODE-"
+$ANALYSIS -i "$DATA" -p "$PCM" -t 1 -v 3 -m $MODE -o "${RESULT_DIR}/graph-$MODE-"
 
 # end

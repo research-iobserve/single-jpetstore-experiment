@@ -2,7 +2,9 @@
 
 # execute setup
 
-BASE=$(cd "$(dirname "$0")"; pwd)/
+BASE_DIR=$(cd "$(dirname "$0")"; pwd)
+
+
 
 WORKLOADS="$1"
 TYPE="$2"
@@ -22,18 +24,12 @@ echo "--------------------------------------------------------------------"
 echo "$TYPE $WORKLOADS"
 echo "--------------------------------------------------------------------"
 
-WORKLOAD_RUNNER="$BASE/../selenium-experiment-workloads-1.0/bin/selenium-experiment-workloads"
-COLLECTOR="$BASE/../collector-0.0.3-SNAPSHOT/bin/collector"
-PHANTOM_JS="$BASE/../phantomjs-2.1.1-linux-x86_64/bin/phantomjs"
+rm -rf $BASE_DIR/analysis/*
 
-SERVICE_URL="http://172.17.0.2:8080/jpetstore"
-
-rm -rf $BASE/analysis/*
-
-if [ -d $BASE/data/$WORKLOADS ] ; then
-	rm -rf $BASE/data/$WORKLOADS/kieker*
+if [ -d $BASE_DIR/data/$WORKLOADS ] ; then
+	rm -rf $BASE_DIR/data/$WORKLOADS/kieker*
 else
-	mkdir -p $BASE/data/$WORKLOADS
+	mkdir -p $BASE_DIR/data/$WORKLOADS
 fi
 
 # check if no leftovers are running
@@ -58,7 +54,7 @@ org.iobserve.service.source.MultipleConnectionTcpCompositeStage.capacity=8192
 
 # dump stage
 kieker.monitoring.writer=kieker.monitoring.writer.filesystem.FileWriter
-kieker.monitoring.writer.filesystem.FileWriter.customStoragePath=$BASE/data/$WORKLOADS
+kieker.monitoring.writer.filesystem.FileWriter.customStoragePath=$BASE_DIR/data/$WORKLOADS
 kieker.monitoring.writer.filesystem.FileWriter.charsetName=UTF-8
 kieker.monitoring.writer.filesystem.FileWriter.maxEntriesInFile=25000
 kieker.monitoring.writer.filesystem.FileWriter.maxLogSize=-1
@@ -111,7 +107,7 @@ rm collector.config
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-$BASE/execute-session-reconstruction.sh $TYPE
+$BASE_DIR/execute-session-reconstruction.sh $TYPE
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 echo ""

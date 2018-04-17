@@ -2,87 +2,162 @@
 
 # configuration
 
-BASE=$(cd "$(dirname "$0")"; pwd)/
+BASE_DIR=$(cd "$(dirname "$0")"; pwd)
 
-if [ -f $BASE/config ] ; then
-	. $BASE/config
+export ANALYSIS_OPTS="-Xmx24g -Xms10m -Dlog4j.configuration=file://$BASE_DIR/log4j.cfg"
+
+# internal data
+CLUSTERINGS[0]=xmeans
+CLUSTERINGS[1]=em
+CLUSTERINGS[2]=hierarchy
+CLUSTERINGS[3]=similarity
+
+if [ -f $BASE_DIR/config ] ; then
+	. $BASE_DIR/config
 else
 	echo "Missing configuration"
 	exit 1
 fi
 
-if [ ! -f $UBM_VISUALIZATION ] ; then
-	echo "Missing user behavior visualization"
+mode=""
+for C in ${CLUSTERINGS[*]} ; do
+	if [ "$C" == "$1" ] ; then
+		mode="$C"
+	fi
+done
+
+if [ "$mode" == "" ] ; then
+	echo "Unknown mode $1"
 	exit 1
 fi
-if [ ! -x $ANALYSIS_CLI ] ; then
+
+if [ ! -x "${ANALYSIS}" ] ; then
 	echo "Missing analysis cli"
 	exit 1
 fi
-if [ ! -d $DATA ] ; then
+if [ ! -d "${DATA_DIR}" ] ; then
 	echo "Data directory missing"
 	exit 1
 fi
-if [ ! -d $PCM ] ; then
+if [ ! -d "${FIXED_DIR}" ] ; then
+	echo "Fixed data directory missing"
+	exit 1
+fi
+if [ ! -d "${PCM_DIR}" ] ; then
 	echo "PCM directory missing"
 	exit 1
 fi
+if [ ! -d "${RESULT_DIR}" ] ; then
+	mkdir "$RESULT_DIR"
+fi
+
+# compute setup
+if [ -f $FIXED_DIR/kieker.map ] ; then
+	KIEKER_DIRECTORIES=$FIXED_DIR
+else
+	KIEKER_DIRECTORIES=""
+	for D in `ls $FIXED_DIR` ; do
+		if [ -f $FIXED_DIR/$D/kieker.map ] ; then
+			if [ "$KIEKER_DIRECTORIES" == "" ] ;then
+				KIEKER_DIRECTORIES="$FIXED_DIR/$D"
+			else
+				KIEKER_DIRECTORIES="$KIEKER_DIRECTORIES:$FIXED_DIR/$D"
+			fi
+		else
+			echo "$FIXED_DIR/$D is not a kieker log directory."
+		fi
+	done
+fi
 
 
-## startup visualization
-echo "------------------------"
-echo "Build and start UBM service"
-echo "------------------------"
-docker-compose -f $UBM_VISUALIZATION build
-docker-compose -f $UBM_VISUALIZATION up >& $BASE/docker-compose.log &
+# assemble analysis config
+cat << EOF > analysis.config
+## The name of the Kieker instance.
+kieker.monitoring.name=JIRA
+kieker.monitoring.hostname=
+kieker.monitoring.metadata=true
 
-# deterime frontend IP address
-CID_FRONTEND=`docker ps | grep code_frontend | awk '{ print $1 }'`
-HOST_FRONTEND=`docker inspect $CID_FRONTEND | grep IPAddress | tail -1 | sed 's/.*:\ "\(.*\)",/\1/g'`
+iobserve.analysis.source=org.iobserve.service.source.FileSourceCompositeStage
+org.iobserve.service.source.FileSourceCompositeStage.sourceDirectories=$KIEKER_DIRECTORIES
 
-# deterime logic IP address
-CID_LOGIC=`docker ps | grep code_logic | awk '{ print $1 }'`
-HOST_LOGIC=`docker inspect $CID_LOGIC | grep IPAddress | tail -1 | sed 's/.*:\ "\(.*\)",/\1/g'`
+iobserve.analysis.traces=true
+iobserve.analysis.dataFlow=true
 
-URL_FRONTEND="http://$HOST_FRONTEND:3000/"
-URL_LOGIC="http://$HOST_LOGIC:8080/ubm-backend/v1/"
+iobserve.analysis.model.pcm.directory.db=$DB_DIR
+iobserve.analysis.model.pcm.directory.init=$PCM_DIR
 
-## wait until service is available
-echo "------------------------"
-echo "Wait for service"
-echo "------------------------"
-while ! curl $URL_FRONTEND ; do
-        echo "wait frontend"
-        sleep 10
-	CID_FRONTEND=`docker ps | grep code_frontend | awk '{ print $1 }'`
-	HOST_FRONTEND=`docker inspect $CID_FRONTEND | grep IPAddress | tail -1 | sed 's/.*:\ "\(.*\)",/\1/g'`
-	URL_FRONTEND="http://$HOST_FRONTEND:3000/"
-done
-while ! curl $URL_LOGIC ; do
-        echo "wait for logic $CID_LOGIC"
-        sleep 10
-	CID_LOGIC=`docker ps | grep code_logic | awk '{ print $1 }'`
-	HOST_LOGIC=`docker inspect $CID_LOGIC | grep IPAddress | tail -1 | sed 's/.*:\ "\(.*\)",/\1/g'`
-	URL_LOGIC="http://$HOST_LOGIC:8080/ubm-backend/v1"
-done
+# trace preparation (note they should be fixed)
+iobserve.analysis.behavior.IEntryCallTraceMatcher=org.iobserve.analysis.systems.jira.JIRACallTraceMatcher
+iobserve.analysis.behavior.IEntryCallAcceptanceMatcher=org.iobserve.analysis.systems.jira.JIRATraceAcceptanceMatcher
+iobserve.analysis.behavior.ITraceSignatureCleanupRewriter=org.iobserve.analysis.systems.jira.JIRASignatureCleanupRewriter
+iobserve.analysis.behavior.IModelGenerationFilterFactory=org.iobserve.analysis.systems.jpetstore.JPetStoreEntryCallRulesFactory
 
+iobserve.analysis.behavior.triggerInterval=1000
 
-echo "Both web services are up. Press return to contiune"
+iobserve.analysis.behavior.sink.baseUrl=$RESULT_DIR
+iobserve.analysis.container.management.sink.visualizationUrl=http://localhost:8080
+EOF
+
+case "$mode" in
+"${CLUSTERINGS[0]}")
+cat << EOF >> analysis.config
+# specific setup similarity matching
+iobserve.analysis.behaviour.filter=org.iobserve.analysis.clustering.xmeans.XMeansBehaviorCompositeStage
+org.iobserve.analysis.clustering.xmeans.XMeansBehaviorCompositeStage.expectedUserGroups=1
+org.iobserve.analysis.clustering.xmeans.XMeansBehaviorCompositeStage.variance=1
+org.iobserve.analysis.clustering.xmeans.XMeansBehaviorCompositeStage.prefix=jira
+org.iobserve.analysis.clustering.xmeans.XMeansBehaviorCompositeStage.outputUrl=$RESULT_DIR
+org.iobserve.analysis.clustering.xmeans.XMeansBehaviorCompositeStage.representativeStrategy=org.iobserve.analysis.systems.jira.JIRARepresentativeStrategy
+EOF
+;;
+"${CLUSTERINGS[1]}")
+cat << EOF >> analysis.config
+# specific setup similarity matching
+iobserve.analysis.behaviour.filter=org.iobserve.analysis.clustering.em.EMBehaviorCompositeStage
+org.iobserve.analysis.clustering.xmeans.EMBehaviorCompositeStage.prefix=jira
+org.iobserve.analysis.clustering.xmeans.EMBehaviorCompositeStage.outputUrl=$RESULT_DIR
+org.iobserve.analysis.clustering.xmeans.EMBehaviorCompositeStage.representativeStrategy=org.iobserve.analysis.systems.jira.JIRARepresentativeStrategy
+EOF
+;;
+"${CLUSTERINGS[2]}")
+cat << EOF >> analysis.config
+# specific setup similarity matching
+iobserve.analysis.behavior.filter=org.iobserve.analysis.clustering.shared.ClassificationCompositeStage
+iobserve.analysis.behavior.visualizationUrl=123
+iobserve.analysis.behavior.sink.baseUrl=$RESULT_DIR
+iobserve.analysis.behavior.classification=org.iobserve.analysis.clustering.birch.BirchClassification
+iobserve.analysis.behavior.preprocess.keepTime=1000
+iobserve.analysis.behavior.preprocess.minSize=1
+iobserve.analysis.behavior.preprocess.keepEmpty=true
+iobserve.analysis.behavior.birch.useClusterNumberMetric=true
+iobserve.analysis.behavior.birch.clusterMetricStrategy=
+iobserve.analysis.behavior.birch.lmethodEvalStrategy=
+iobserve.analysis.behavior.birch.leafThreshold=2
+iobserve.analysis.behavior.birch.maxLeafSize=7
+iobserve.analysis.behavior.birch.maxNodeSize=2
+iobserve.analysis.behavior.birch.maxLeafEntries=1
+iobserve.analysis.behavior.birch.expectedNumberOfClusters=7
+EOF
+;;
+"${CLUSTERINGS[3]}")
+cat << EOF >> analysis.config
+# specific setup similarity matching
+iobserve.analysis.behavior.filter=org.iobserve.analysis.behavior.clustering.similaritymatching.SimilarityBehaviorCompositeStage
+iobserve.analysis.behavior.IClassificationStage=org.iobserve.analysis.behavior.clustering.similaritymatching.SimilarityMatchingStage
+iobserve.analysis.behavior.sm.IParameterMetric=org.iobserve.analysis.systems.jira.JIRAParameterMetric
+iobserve.analysis.behavior.sm.IStructureMetricStrategy=org.iobserve.analysis.behavior.clustering.similaritymatching.GeneralStructureMetric
+iobserve.analysis.behavior.sm.IModelGenerationStrategy=org.iobserve.analysis.behavior.clustering.similaritymatching.UnionModelGenerationStrategy
+iobserve.analysis.behavior.sm.parameters.radius=2
+iobserve.analysis.behavior.sm.structure.radius=2
+EOF
+;;
+esac
 
 # run analysis
 echo "------------------------"
 echo "Run analysis"
 echo "------------------------"
 
-$ANALYSIS_CLI -i "$DATA" -p "$PCM" -t 1 -v 4 -u "$URL_LOGIC"
-
-echo "Analysis complete. Press return to contiune"
-
-# stop setup
-echo "------------------------"
-echo "Terminate"
-echo "------------------------"
-
-docker-compose -f $UBM_VISUALIZATION down
+$ANALYSIS -c analysis.config
 
 # end
