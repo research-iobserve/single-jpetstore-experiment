@@ -2,35 +2,37 @@
 
 BASE_DIR=$(cd "$(dirname "$0")"; pwd)
 
-if [ -f $BASE/config ] ; then
-	. $BASE/config
+. $BASE_DIR/common-functions.sh
+
+if [ -f $BASE_DIR/config ] ; then
+	. $BASE_DIR/config
 else
-	echo "Missing configuration"
+	error "Missing configuration"
 	exit 1
 fi
 
 TYPE="$1"
 
 if [ "$TYPE" == "" ] ; then
-	echo "type missing"
+	error "type missing"
 	exit 1
 fi
 
-if [ ! -d "$DATA_DIR/$TYPE" ] ; then
-	echo "directory does not exist: $DATA_DIR/$TYPE"
-	exit 1
+export DATA_BASE_DIR="$DATA_DIR/$TYPE"
+export FIXED_BASE_DIR="$FIXED_DIR/$TYPE"
+
+checkDirectory data-directory
+
+KIEKER_DATA_DIR=`ls "${DATA_BASE_DIR}"`
+
+SOURCE_DIR="$DATA_DIR_DIR/$KIEKER_DATA_DIR"
+TARGET_DIR="$FIXED_BASE_DIR/$KIEKER_DATA_DIR"
+
+if [ -d "${FIXED_BASE_DIR}" ] ; then
+	rm -rf "${FIXED_BASE_DIR}"
 fi
 
-KIEKER_DATA_DIR=`ls $DATA_DIR/$TYPE/`
-
-SOURCE_DIR="$DATA_DIR/$TYPE/$KIEKER_DATA_DIR"
-TARGET_DIR="$FIXED_DIR/$TYPE/$KIEKER_DATA_DIR"
-
-if [ -d $FIXED_DIR/$TYPE ] ; then
-	rm -rf $FIXED_DIR/$TYPE
-fi
-
-mkdir -p $FIXED_DIR/$TYPE
+mkdir -p "${FIXED_BASE_DIR}"
 
 cat << EOF > reconstructor.config
 ## The name of the Kieker instance.
@@ -39,11 +41,11 @@ kieker.monitoring.hostname=
 kieker.monitoring.metadata=true
 
 iobserve.service.reader=org.iobserve.service.source.FileSourceCompositeStage
-org.iobserve.service.source.FileSourceCompositeStage.sourceDirectories=$DATA_DIR/$TYPE/$KIEKER_DATA_DIR
+org.iobserve.service.source.FileSourceCompositeStage.sourceDirectories=$DATA_BASE_DIR/$KIEKER_DATA_DIR
 
 #####
 kieker.monitoring.writer=kieker.monitoring.writer.filesystem.FileWriter
-kieker.monitoring.writer.filesystem.FileWriter.customStoragePath=$FIXED_DIR/$TYPE
+kieker.monitoring.writer.filesystem.FileWriter.customStoragePath=$FIXED_BASE_DIR/$TYPE
 kieker.monitoring.writer.filesystem.FileWriter.charsetName=UTF-8
 kieker.monitoring.writer.filesystem.FileWriter.maxEntriesInFile=25000
 kieker.monitoring.writer.filesystem.FileWriter.maxLogSize=-1

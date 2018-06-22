@@ -4,8 +4,7 @@ BASE_DIR=$(cd "$(dirname "$0")"; pwd)
 
 rm -rf $BASE_DIR/data/*
 
-# NewCustomer
-
+# List of behaviors
 ALL="FishLover,SingleReptileBuyer,SingleCatBuyer,BrowsingUser,AccountManager,CatLover"
 
 for I in `echo $ALL | sed 's/,/ /g'` ; do
