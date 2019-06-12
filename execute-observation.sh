@@ -23,30 +23,31 @@ function stop-jpetstore() {
 
 ######################
 # parameter evaluation
-
-export WORKLOAD_CONFIGURATION=`basename "$1" | sed 's/\.yaml$//g'`
-export WORKLOAD="$1"
-export EXPERIMENT_ID="$2"
-export COLLECTOR_OUTPUT_DIR="$DATA_DIR/$WORKLOAD_CONFIGURATION"
-
-if [ "$WORKLOAD_CONFIGURATION" == "" ] ; then
-	warning "Missing workloads. Running in interactive mode."
-	information "Use one of FishLover,SingleReptileBuyer,SingleCatBuyer,BrowsingUser,AccountManager,CatLover,NewCustomer"
-	export WORKLOAD_CONFIGURATION="INTERACTIVE"
-	export EXPERIMENT_ID="default"
+if [ "$1" == "" ] ; then
+	export INTERACTIVE="yes"
+	export EXPERIMENT_ID="interactive"
+	information "Interactive mode no specialized workload driver"
 else
-	if [ "${EXPERIMENT_ID}" == "" ] ; then
-		error "Missing experiment id."
-		exit 1
-	fi
+	export INTERACTIVE="no"
+	checkFile workload "$1"
+	WORKLOAD_PATH="$1"
+	export EXPERIMENT_ID=`basename "$WORKLOAD_PATH" | sed 's/\.yaml$//g'`
+	information "Automatic mode, workload driver is ${WORKLOAD_PATH}"
 fi
 
-##
-# are all tools available
+export COLLECTOR_DATA_DIR="${DATA_DIR}/${EXPERIMENT_ID}"
+
+###################################
+# check setup
+
+if [ "$INTERACTIVE" == "no" ] ; then
+	checkExecutable workload-runner $WORKLOAD_RUNNER
+	checkExecutable web-driver $WEB_DRIVER
+	checkFile log-configuration $BASE_DIR/log4j.cfg
+fi
 
 checkExecutable collector $COLLECTOR
 checkExecutable workload-runner $WORKLOAD_RUNNER
-checkExecutable phantomjs $PHANTOM_JS
 
 ####################
 # main script
@@ -58,18 +59,7 @@ information "-------------------------------------------------------------------
 ##
 # cleanup
 
-information "Cleanup directories"
-
-if [ -d "$COLLECTOR_OUTPUT_DIR" ] ; then
-	rm -rf "$COLLECTOR_OUTPUT_DIR/"kieker*
-else
-	mkdir -p "$COLLECTOR_OUTPUT_DIR"
-fi
-
 stop-jpetstore
-
-information "Cleanup phantomjs"
-killall -9 phantomjs
 
 information "Cleanup collector..."
 
@@ -82,6 +72,14 @@ done
 
 information "done"
 echo ""
+
+information "Cleanup directories"
+
+if [ -d "$COLLECTOR_DATA_DIR" ] ; then
+	rm -rf $COLLECTOR_DATA_DIR/*
+else
+	mkdir -p "$COLLECTOR_DATA_DIR"
+fi
 
 ##################
 # start experiment
@@ -107,7 +105,7 @@ org.iobserve.service.source.MultipleConnectionTcpCompositeStage.capacity=8192
 
 # dump stage
 kieker.monitoring.writer=kieker.monitoring.writer.filesystem.FileWriter
-kieker.monitoring.writer.filesystem.FileWriter.customStoragePath=$COLLECTOR_OUTPUT_DIR
+kieker.monitoring.writer.filesystem.FileWriter.customStoragePath=$COLLECTOR_DATA_DIR/
 kieker.monitoring.writer.filesystem.FileWriter.charsetName=UTF-8
 kieker.monitoring.writer.filesystem.FileWriter.maxEntriesInFile=25000
 kieker.monitoring.writer.filesystem.FileWriter.maxLogSize=-1
@@ -156,19 +154,20 @@ information "Service ready\n"
 ##
 # workload
 
-if [ "${WORKLOAD_CONFIGURATION}" == "INTERACTIVE" ] ; then
-	warning "Interactive mode"
-	information "access JPetStore via ${SERVICE_URL}"
-	information "press return to stop JPetStore execution"
+# check workload
+if [ "$INTERACTIVE" == "yes" ] ; then
+	information "You may now use JPetStore"
+	information "Press Enter to stop the service"
 	read
 else
-	information "Start workload"
+	information "Running workload driver"
 
-	export SELENIUM_EXPERIMENT_WORKLOADS_OPTS=-Dlog4j.configuration=file:///$BASE_DIR/log4j.cfg
-	$WORKLOAD_RUNNER -c $WORKLOAD -u "$SERVICE_URL" -d "$PHANTOM_JS"
+        export SELENIUM_EXPERIMENT_WORKLOADS_OPTS=-Dlog4j.configuration=file:///$BASE_DIR/log4j.cfg
+        $WORKLOAD_RUNNER -c $WORKLOAD_PATH -u "$SERVICE_URL" -d "$WEB_DRIVER"
 
-	sleep 10
+        sleep 10
 fi
+
 
 ####
 # end of experiment
@@ -177,9 +176,6 @@ information "Undeploying experiment."
 
 # stop and remove jpetstore
 stop-jpetstore
-
-# get rid of phantomjs if it has not correctly terminated with the workload driver
-killall -9 phantomjs
 
 # finally stop the collector
 kill -TERM ${COLLECTOR_PID}
