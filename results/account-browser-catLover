@@ -1,0 +1,1885 @@
+{
+  "noise" : [ {
+    "nodes" : {
+      "public org.mybatis.jpetstore.service.CatalogService.<init>()" : {
+        "name" : "public org.mybatis.jpetstore.service.CatalogService.<init>()"
+      },
+      "public org.mybatis.jpetstore.service.OrderService.<init>()" : {
+        "name" : "public org.mybatis.jpetstore.service.OrderService.<init>()"
+      },
+      "public org.mybatis.jpetstore.service.AccountService.<init>()" : {
+        "name" : "public org.mybatis.jpetstore.service.AccountService.<init>()"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538525572352158,
+        "exitTime" : 1560538525572465141,
+        "operationSignature" : "public org.mybatis.jpetstore.service.OrderService.<init>()",
+        "classSignature" : "public org.mybatis.jpetstore.service.OrderService.<init>()",
+        "sessionId" : "<no-session-id>",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 0,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "public org.mybatis.jpetstore.service.CatalogService.<init>()"
+      },
+      "target" : {
+        "name" : "public org.mybatis.jpetstore.service.OrderService.<init>()"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538525544613904,
+        "exitTime" : 1560538525544726582,
+        "operationSignature" : "public org.mybatis.jpetstore.service.CatalogService.<init>()",
+        "classSignature" : "public org.mybatis.jpetstore.service.CatalogService.<init>()",
+        "sessionId" : "<no-session-id>",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 0,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "public org.mybatis.jpetstore.service.AccountService.<init>()"
+      },
+      "target" : {
+        "name" : "public org.mybatis.jpetstore.service.CatalogService.<init>()"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/images/dogs_icon.gif" : {
+        "name" : "/jpetstore/images/dogs_icon.gif"
+      },
+      "/jpetstore/images/sm_birds.gif" : {
+        "name" : "/jpetstore/images/sm_birds.gif"
+      },
+      "/jpetstore/images/splash.gif" : {
+        "name" : "/jpetstore/images/splash.gif"
+      },
+      "/jpetstore/images/sm_dogs.gif" : {
+        "name" : "/jpetstore/images/sm_dogs.gif"
+      },
+      "/jpetstore/images/sm_cats.gif" : {
+        "name" : "/jpetstore/images/sm_cats.gif"
+      },
+      "/jpetstore/images/reptiles_icon.gif" : {
+        "name" : "/jpetstore/images/reptiles_icon.gif"
+      },
+      "/jpetstore/images/birds_icon.gif" : {
+        "name" : "/jpetstore/images/birds_icon.gif"
+      },
+      "/jpetstore/images/fish_icon.gif" : {
+        "name" : "/jpetstore/images/fish_icon.gif"
+      },
+      "/jpetstore/images/separator.gif" : {
+        "name" : "/jpetstore/images/separator.gif"
+      },
+      "/jpetstore/images/cart.gif" : {
+        "name" : "/jpetstore/images/cart.gif"
+      },
+      "/jpetstore/images/sm_reptiles.gif" : {
+        "name" : "/jpetstore/images/sm_reptiles.gif"
+      },
+      "/jpetstore/images/sm_fish.gif" : {
+        "name" : "/jpetstore/images/sm_fish.gif"
+      },
+      "/jpetstore/images/logo-topbar.gif" : {
+        "name" : "/jpetstore/images/logo-topbar.gif"
+      },
+      "/jpetstore/css/jpetstore.css" : {
+        "name" : "/jpetstore/css/jpetstore.css"
+      },
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "/jpetstore/images/cats_icon.gif" : {
+        "name" : "/jpetstore/images/cats_icon.gif"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528760691627,
+        "exitTime" : 1560538528760876181,
+        "operationSignature" : "/jpetstore/images/cart.gif",
+        "classSignature" : "/jpetstore/images/cart.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/sm_fish.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/cart.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528994704373,
+        "exitTime" : 1560538529001040382,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/reptiles_icon.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528759162594,
+        "exitTime" : 1560538528764409633,
+        "operationSignature" : "/jpetstore/css/jpetstore.css",
+        "classSignature" : "/jpetstore/css/jpetstore.css",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/logo-topbar.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/css/jpetstore.css"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528782028528,
+        "exitTime" : 1560538528782259653,
+        "operationSignature" : "/jpetstore/images/sm_reptiles.gif",
+        "classSignature" : "/jpetstore/images/sm_reptiles.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/fish_icon.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/sm_reptiles.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528760164605,
+        "exitTime" : 1560538528763455118,
+        "operationSignature" : "/jpetstore/images/sm_dogs.gif",
+        "classSignature" : "/jpetstore/images/sm_dogs.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/separator.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/sm_dogs.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528774331377,
+        "exitTime" : 1560538528774562758,
+        "operationSignature" : "/jpetstore/images/cats_icon.gif",
+        "classSignature" : "/jpetstore/images/cats_icon.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/dogs_icon.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/cats_icon.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528756845324,
+        "exitTime" : 1560538528758102705,
+        "operationSignature" : "/jpetstore/images/logo-topbar.gif",
+        "classSignature" : "/jpetstore/images/logo-topbar.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/logo-topbar.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528760470575,
+        "exitTime" : 1560538528763045884,
+        "operationSignature" : "/jpetstore/images/sm_fish.gif",
+        "classSignature" : "/jpetstore/images/sm_fish.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/sm_dogs.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/sm_fish.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528759629187,
+        "exitTime" : 1560538528759843400,
+        "operationSignature" : "/jpetstore/images/separator.gif",
+        "classSignature" : "/jpetstore/images/separator.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/css/jpetstore.css"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/separator.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528788647540,
+        "exitTime" : 1560538528788848092,
+        "operationSignature" : "/jpetstore/images/reptiles_icon.gif",
+        "classSignature" : "/jpetstore/images/reptiles_icon.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/birds_icon.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/reptiles_icon.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528786735129,
+        "exitTime" : 1560538528787036603,
+        "operationSignature" : "/jpetstore/images/sm_birds.gif",
+        "classSignature" : "/jpetstore/images/sm_birds.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/sm_reptiles.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/sm_birds.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528780348215,
+        "exitTime" : 1560538528780629098,
+        "operationSignature" : "/jpetstore/images/fish_icon.gif",
+        "classSignature" : "/jpetstore/images/fish_icon.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/sm_cats.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/fish_icon.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528787580491,
+        "exitTime" : 1560538528787786959,
+        "operationSignature" : "/jpetstore/images/birds_icon.gif",
+        "classSignature" : "/jpetstore/images/birds_icon.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/splash.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/birds_icon.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538529097606670,
+        "exitTime" : 1560538529413111569,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "FISH" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528773251190,
+        "exitTime" : 1560538528773491606,
+        "operationSignature" : "/jpetstore/images/dogs_icon.gif",
+        "classSignature" : "/jpetstore/images/dogs_icon.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/cart.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/dogs_icon.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528776001745,
+        "exitTime" : 1560538528776213652,
+        "operationSignature" : "/jpetstore/images/sm_cats.gif",
+        "classSignature" : "/jpetstore/images/sm_cats.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/cats_icon.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/sm_cats.gif"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538528786788734,
+        "exitTime" : 1560538528787459590,
+        "operationSignature" : "/jpetstore/images/splash.gif",
+        "classSignature" : "/jpetstore/images/splash.gif",
+        "sessionId" : "79D15F2F166F23E23207E4B5A2A74531",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/images/sm_birds.gif"
+      },
+      "target" : {
+        "name" : "/jpetstore/images/splash.gif"
+      }
+    } ]
+  } ],
+  "clusters" : [ [ {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538591634545447,
+        "exitTime" : 1560538591639168456,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "D0A2815290B1A03CBB9E6D5BEED576E4",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538641634466169,
+        "exitTime" : 1560538641638017577,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "5DCEBDAB518A6C7EB1D264A60E6C13D1",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538536628160359,
+        "exitTime" : 1560538536631562393,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "AB279C73DAEA18B035305CEE5E529715",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538536697317487,
+        "exitTime" : 1560538536765529185,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "AB279C73DAEA18B035305CEE5E529715",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "FISH" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538676652210698,
+        "exitTime" : 1560538676658101584,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "F49B97B4009E2EF73C212E30203E3349",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538666647798107,
+        "exitTime" : 1560538666652989995,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "5F7E4B29E6DF673AA0CE38FB23DC4B18",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538571634495471,
+        "exitTime" : 1560538571640861152,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "89D6D951D7917F973E340A3D351887C0",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538716650870567,
+        "exitTime" : 1560538716654546437,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "BEB3BBE2D0238D663699FE5BF84424AB",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538651640793491,
+        "exitTime" : 1560538651644640005,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "D46F5591DE769CEB37959B693E46C230",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538631648050176,
+        "exitTime" : 1560538631652197011,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "43824832D7E5392F7FEC4B6F2DB76C56",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538696640023391,
+        "exitTime" : 1560538696643423435,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "DBD60CF91E7B39F504215801167346D6",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538636631849106,
+        "exitTime" : 1560538636635733393,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "6352C7AF8021C73BC84E7A430DA68CC9",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538581635195440,
+        "exitTime" : 1560538581640758071,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "E92A7025A093ECE65130FD23D6E9ED44",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538686644665784,
+        "exitTime" : 1560538686648207271,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "03CAC87276CC66C8EE15A0D801C4F87C",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538551638651587,
+        "exitTime" : 1560538551647130226,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "EE948B71F87331B6FE6EDDA53483E8A0",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538606710649393,
+        "exitTime" : 1560538606714581889,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "B27E78761FFB06C44B9B8B9786CB1C57",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538606636651685,
+        "exitTime" : 1560538606638337073,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "B27E78761FFB06C44B9B8B9786CB1C57",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538646631191789,
+        "exitTime" : 1560538646634572770,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "FC4EE232EC1C9E76594964C41D59F33F",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538691650134370,
+        "exitTime" : 1560538691653329278,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "C1640458EDA0E6867C68BEF9114F4BF5",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538726643171305,
+        "exitTime" : 1560538726646215478,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "048330B452480CBF49092B194D74B811",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538701645777955,
+        "exitTime" : 1560538701649586165,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "7CDF1DA9FB70F32CEA04E583FC25C1AB",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538721653019719,
+        "exitTime" : 1560538721656655626,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "4FB7DCD45DF72121DF3AA10A0B175A3C",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538656660854849,
+        "exitTime" : 1560538656664990386,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "0DF3F46F1EA393B889EBB6EE56A3D2D9",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538616623768795,
+        "exitTime" : 1560538616625376802,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "A268EC71549D2CEDA500D7AD64D1E1D0",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538616702158165,
+        "exitTime" : 1560538616708163753,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "A268EC71549D2CEDA500D7AD64D1E1D0",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "FISH" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538596693360544,
+        "exitTime" : 1560538596698096434,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "86362618D098AB1A571B77D80A3C1620",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538596624171368,
+        "exitTime" : 1560538596626331090,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "86362618D098AB1A571B77D80A3C1620",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538621634160684,
+        "exitTime" : 1560538621638317735,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "EC96FF1F9E67704DE761AACC1A1ED532",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538706644068024,
+        "exitTime" : 1560538706647214707,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "2B7B57007C4A17D754668143B469A102",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538561642949301,
+        "exitTime" : 1560538561651331718,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "15D358F78C463D66592F503E0ABFF759",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538601643063436,
+        "exitTime" : 1560538601648463910,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "29E676DB761FFAAD6697DC35E817B1D9",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538671662941400,
+        "exitTime" : 1560538671667749606,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "A569D198E527E67FE01DFDC7507E967B",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538711651858924,
+        "exitTime" : 1560538711655582096,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "39EC8621DB9573B24E3CEEA9A53DDD29",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538661641945776,
+        "exitTime" : 1560538661645436398,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "37C8D3103FD0A37D7414DDB1AADC2163",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538681649517908,
+        "exitTime" : 1560538681652960498,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "A799A45178B6E8337EAA717D526EB18A",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538541641525246,
+        "exitTime" : 1560538541646576085,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "D2456D14BB6052CB57FEDF6DDD89008D",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538530641817136,
+        "exitTime" : 1560538530655592799,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "0F742963DAE8F90D0AF4D087B4674CC0",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538611653053247,
+        "exitTime" : 1560538611657338287,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "957ABB0D052C745DCC0E0B710E4AEF13",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  } ], [ {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "/jpetstore/actions/Account.action" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538626728133722,
+        "exitTime" : 1560538626732192075,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "D070F9EB9986C42252C9D8BF2AE9C3DA",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Account.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538626655836102,
+        "exitTime" : 1560538626659311523,
+        "operationSignature" : "/jpetstore/actions/Account.action",
+        "classSignature" : "/jpetstore/actions/Account.action",
+        "sessionId" : "D070F9EB9986C42252C9D8BF2AE9C3DA",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "signonForm" ],
+        "values" : [ "" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "/jpetstore/actions/Account.action" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538566661006958,
+        "exitTime" : 1560538566665910130,
+        "operationSignature" : "/jpetstore/actions/Account.action",
+        "classSignature" : "/jpetstore/actions/Account.action",
+        "sessionId" : "8DB09D066BDA30A9F625A853421D4174",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "signonForm" ],
+        "values" : [ "" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538566733441847,
+        "exitTime" : 1560538566737866255,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "8DB09D066BDA30A9F625A853421D4174",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Account.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "/jpetstore/actions/Account.action" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538576648978628,
+        "exitTime" : 1560538576652701288,
+        "operationSignature" : "/jpetstore/actions/Account.action",
+        "classSignature" : "/jpetstore/actions/Account.action",
+        "sessionId" : "C384BD795587130BF61AB20A069D8F99",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "signonForm" ],
+        "values" : [ "" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538576736040597,
+        "exitTime" : 1560538576740334040,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "C384BD795587130BF61AB20A069D8F99",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Account.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "/jpetstore/actions/Account.action" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538547068690787,
+        "exitTime" : 1560538547073543311,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "A2911DEFD5890452C86925CB4DB6A5E4",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Account.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538546662839028,
+        "exitTime" : 1560538546964737281,
+        "operationSignature" : "/jpetstore/actions/Account.action",
+        "classSignature" : "/jpetstore/actions/Account.action",
+        "sessionId" : "A2911DEFD5890452C86925CB4DB6A5E4",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "signonForm" ],
+        "values" : [ "" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "/jpetstore/actions/Account.action" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538586740167287,
+        "exitTime" : 1560538586744616149,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "FBF43682B3851B69618998957F5CBB95",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Account.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538586658240681,
+        "exitTime" : 1560538586662270293,
+        "operationSignature" : "/jpetstore/actions/Account.action",
+        "classSignature" : "/jpetstore/actions/Account.action",
+        "sessionId" : "FBF43682B3851B69618998957F5CBB95",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "signonForm" ],
+        "values" : [ "" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "/jpetstore/actions/Account.action" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538556727545873,
+        "exitTime" : 1560538556736888277,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "9084E95D0AECBE20943512AD57CA0442",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Account.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560538556647664926,
+        "exitTime" : 1560538556659587951,
+        "operationSignature" : "/jpetstore/actions/Account.action",
+        "classSignature" : "/jpetstore/actions/Account.action",
+        "sessionId" : "9084E95D0AECBE20943512AD57CA0442",
+        "hostname" : "34eefb8d12f3",
+        "parameters" : [ "signonForm" ],
+        "values" : [ "" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    } ]
+  } ] ]
+}

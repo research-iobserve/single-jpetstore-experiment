@@ -1,0 +1,86 @@
+{
+  "noise" : [ {
+    "nodes" : {
+      "Init" : {
+        "name" : "Init"
+      },
+      "public org.mybatis.jpetstore.service.CatalogService.<init>()" : {
+        "name" : "public org.mybatis.jpetstore.service.CatalogService.<init>()"
+      },
+      "public org.mybatis.jpetstore.service.OrderService.<init>()" : {
+        "name" : "public org.mybatis.jpetstore.service.OrderService.<init>()"
+      },
+      "public org.mybatis.jpetstore.service.AccountService.<init>()" : {
+        "name" : "public org.mybatis.jpetstore.service.AccountService.<init>()"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560942028651366694,
+        "exitTime" : 1560942028651407985,
+        "operationSignature" : "public org.mybatis.jpetstore.service.CatalogService.<init>()",
+        "classSignature" : "public org.mybatis.jpetstore.service.CatalogService.<init>()",
+        "sessionId" : "<no-session-id>",
+        "hostname" : "329ca99ec566",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 0,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "public org.mybatis.jpetstore.service.AccountService.<init>()"
+      },
+      "target" : {
+        "name" : "public org.mybatis.jpetstore.service.CatalogService.<init>()"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560942028182489267,
+        "exitTime" : 1560942028184635540,
+        "operationSignature" : "public org.mybatis.jpetstore.service.AccountService.<init>()",
+        "classSignature" : "public org.mybatis.jpetstore.service.AccountService.<init>()",
+        "sessionId" : "<no-session-id>",
+        "hostname" : "329ca99ec566",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 0,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "Init"
+      },
+      "target" : {
+        "name" : "public org.mybatis.jpetstore.service.AccountService.<init>()"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560942028680765954,
+        "exitTime" : 1560942028680787431,
+        "operationSignature" : "public org.mybatis.jpetstore.service.OrderService.<init>()",
+        "classSignature" : "public org.mybatis.jpetstore.service.OrderService.<init>()",
+        "sessionId" : "<no-session-id>",
+        "hostname" : "329ca99ec566",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 0,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "public org.mybatis.jpetstore.service.CatalogService.<init>()"
+      },
+      "target" : {
+        "name" : "public org.mybatis.jpetstore.service.OrderService.<init>()"
+      }
+    } ]
+  } ],
+  "clusters" : [ ]
+}

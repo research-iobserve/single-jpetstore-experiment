@@ -1,24 +1,18 @@
 # Example configuration
 ---
 activityDelay: 1
-phantom:
+webDriverConfiguration:
   baseUrl: http://172.17.0.2:8080/jpetstore/
-  path: /home/reiner/Projects/iObserve/experiments/phantomjs-2.1.1-linux-x86_64/bin/phantomjs
+  type: org.iobserve.selenium.behavior.ChromeDriverFactory
+  driver: /home/lars/git/lars-juergensen-bsc/Experiments/tools/chromedriver
   timeout: 1000
 workloads:
-  - name: AccountManager
-    intensity:
-      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
-      name: AccountManager
-      spawnPerSecond: 0.1
-      durations: [ 100, 50 ]
-      delays: [ 50, 50 ]
   - name: BrowsingUser
     intensity:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
       name: BrowsingUser
-      spawnPerSecond: 0.2
-      durations: [ 200 ]
+      spawnPerSecond: 0.1
+      durations: [ 100 ]
 behaviors:
   AccountManager:
     name: AccountManager
@@ -61,8 +55,8 @@ behaviors:
       - name: AddCatsToCartTask
         repetition: { min: 1, max: 10 }
         parameters:
-          amountOfCat: 9
-          catPosition: 0
+          amount: 9
+          itemPosition: 0
       - name: LoginJPetStoreTask
         parameters:
           username: j2ee
@@ -74,16 +68,16 @@ behaviors:
       - name: AddCatsToCartTask
         repetition: { min: 1, max: 10 }
         parameters:
-          amountOfCat: 9
-          catPosition: 0
+          amount: 9
+          itemPosition: 0
   FishLoverBehavior:
     name: FishLoverBehavior
     subbehaviors:
       - name: AddFishToCartTask
         repetition: { min: 1, max: 10 }
         parameters:
-          amountOfCat: 9
-          fishPosition: 0
+          amount: 9
+          itemPosition: 0
       - name: LoginJPetStoreTask
         parameters:
           username: j2ee
@@ -119,7 +113,7 @@ behaviors:
           username: j2ee
           password: j2ee
       - name: CheckoutJPetStoreTask
-  SingleCatBuyerWorkload:
+  SingleReptileBuyerBehavior:
     name: SingleReptileBuyerBehavior
     subbehaviors:
       - name: AddReptilesToCartTask

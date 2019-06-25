@@ -1,0 +1,206 @@
+{
+  "noise" : [ {
+    "nodes" : {
+      "/jpetstore/actions/Cart.action" : {
+        "name" : "/jpetstore/actions/Cart.action"
+      },
+      "/jpetstore/actions/Catalog.action" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "/jpetstore/actions/Order.action" : {
+        "name" : "/jpetstore/actions/Order.action"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560720276581238467,
+        "exitTime" : 1560720276796980686,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "D8F1BEE191A324DD136C66261C0BD8E0",
+        "hostname" : "62bc017ce502",
+        "parameters" : [ "viewItem", "itemId" ],
+        "values" : [ "", "EST-11" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560720284283740594,
+        "exitTime" : 1560720284300201307,
+        "operationSignature" : "/jpetstore/actions/Cart.action",
+        "classSignature" : "/jpetstore/actions/Cart.action",
+        "sessionId" : "D8F1BEE191A324DD136C66261C0BD8E0",
+        "hostname" : "62bc017ce502",
+        "parameters" : [ "EST-11", "updateCartQuantities", "_sourcePage", "__fp" ],
+        "values" : [ "1", "Update Cart", "qsCsG5iCxXN5-hkMSdq8e9zrz9snjUzFXDTLMXGLWuAgBR7jKrpv5fZiWhvfZF0XGEeAGhYFikKw6es3BVi9Alz_tffMnuX_", "TymLO3YXUGuVxdMjdQLInvW5TJUhe08rxIp5OLyyoYG1h1GrtXtQyUKlV9KKfnB2" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Cart.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Cart.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560720279807015948,
+        "exitTime" : 1560720280060908420,
+        "operationSignature" : "/jpetstore/actions/Cart.action",
+        "classSignature" : "/jpetstore/actions/Cart.action",
+        "sessionId" : "D8F1BEE191A324DD136C66261C0BD8E0",
+        "hostname" : "62bc017ce502",
+        "parameters" : [ "addItemToCart", "workingItemId" ],
+        "values" : [ "", "EST-11" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Cart.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560720286018026055,
+        "exitTime" : 1560720286151753400,
+        "operationSignature" : "/jpetstore/actions/Order.action",
+        "classSignature" : "/jpetstore/actions/Order.action",
+        "sessionId" : "D8F1BEE191A324DD136C66261C0BD8E0",
+        "hostname" : "62bc017ce502",
+        "parameters" : [ "newOrderForm" ],
+        "values" : [ "" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Cart.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Order.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560720271307616913,
+        "exitTime" : 1560720271710848087,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "D8F1BEE191A324DD136C66261C0BD8E0",
+        "hostname" : "62bc017ce502",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "REPTILES" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560720274202943389,
+        "exitTime" : 1560720274468579773,
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "classSignature" : "/jpetstore/actions/Catalog.action",
+        "sessionId" : "D8F1BEE191A324DD136C66261C0BD8E0",
+        "hostname" : "62bc017ce502",
+        "parameters" : [ "viewProduct", "productId" ],
+        "values" : [ "", "RP-SN-01" ],
+        "requestType" : 1,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    } ]
+  }, {
+    "nodes" : {
+      "public org.mybatis.jpetstore.service.CatalogService.<init>()" : {
+        "name" : "public org.mybatis.jpetstore.service.CatalogService.<init>()"
+      },
+      "public org.mybatis.jpetstore.service.OrderService.<init>()" : {
+        "name" : "public org.mybatis.jpetstore.service.OrderService.<init>()"
+      },
+      "public org.mybatis.jpetstore.service.AccountService.<init>()" : {
+        "name" : "public org.mybatis.jpetstore.service.AccountService.<init>()"
+      }
+    },
+    "edges" : [ {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560720231075667227,
+        "exitTime" : 1560720231076097782,
+        "operationSignature" : "public org.mybatis.jpetstore.service.OrderService.<init>()",
+        "classSignature" : "public org.mybatis.jpetstore.service.OrderService.<init>()",
+        "sessionId" : "<no-session-id>",
+        "hostname" : "62bc017ce502",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 0,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "public org.mybatis.jpetstore.service.CatalogService.<init>()"
+      },
+      "target" : {
+        "name" : "public org.mybatis.jpetstore.service.OrderService.<init>()"
+      }
+    }, {
+      "events" : [ {
+        "loggingTimestamp" : -1,
+        "entryTime" : 1560720231015419443,
+        "exitTime" : 1560720231015440844,
+        "operationSignature" : "public org.mybatis.jpetstore.service.CatalogService.<init>()",
+        "classSignature" : "public org.mybatis.jpetstore.service.CatalogService.<init>()",
+        "sessionId" : "<no-session-id>",
+        "hostname" : "62bc017ce502",
+        "parameters" : [ ],
+        "values" : [ ],
+        "requestType" : 0,
+        "valueTypes" : [ "long", "long", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.String", "[Ljava.lang.String;", "[Ljava.lang.String;", "int" ],
+        "valueNames" : [ "entryTime", "exitTime", "operationSignature", "classSignature", "sessionId", "hostname", "parameters", "values", "requestType" ],
+        "size" : 44
+      } ],
+      "source" : {
+        "name" : "public org.mybatis.jpetstore.service.AccountService.<init>()"
+      },
+      "target" : {
+        "name" : "public org.mybatis.jpetstore.service.CatalogService.<init>()"
+      }
+    } ]
+  } ],
+  "clusters" : [ ]
+}
