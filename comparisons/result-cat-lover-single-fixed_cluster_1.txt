@@ -1,1 +1,0 @@
-result-cat-lover-single-fixed_cluster_1;1;2;3;4;4;7;10;7;0.000000;0.125000;124.400000

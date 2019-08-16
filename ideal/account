@@ -6,97 +6,18 @@
       "/jpetstore/actions/Catalog.action" : {
         "name" : "/jpetstore/actions/Catalog.action"
       },
-      "/jpetstore/actions/Order.action" : {
-        "name" : "/jpetstore/actions/Order.action"
-      },
       "/jpetstore/actions/Account.action" : {
         "name" : "/jpetstore/actions/Account.action"
+      },
+      "/jpetstore/actions/Order.action" : {
+        "name" : "/jpetstore/actions/Order.action"
       }
+      
+      
     },
     "edges" : [ {
       "eventGroups" : [ {
-        "parameters" : [ "listOrders" ],
-        "events" : [ {
-          "operationSignature" : "/jpetstore/actions/Order.action",
-          "parameters" : [ "listOrders" ],
-          "values" : [ "" ]
-        } ]
-      } ],
-      "source" : {
-        "name" : "/jpetstore/actions/Account.action"
-      },
-      "target" : {
-        "name" : "/jpetstore/actions/Order.action"
-      }
-    }, {
-      "eventGroups" : [ {
-        "parameters" : [ ],
-        "events" : [ {
-          "operationSignature" : "/jpetstore/actions/Catalog.action",
-          "parameters" : [ ],
-          "values" : [ ]
-        } ]
-      } ],
-      "source" : {
-        "name" : "/jpetstore/actions/Account.action"
-      },
-      "target" : {
-        "name" : "/jpetstore/actions/Catalog.action"
-      }
-    }, {
-      "eventGroups" : [ {
-        "parameters" : [ "username", "password", "signon", "_sourcePage", "__fp" ],
-        "events" : [ {
-          "operationSignature" : "/jpetstore/actions/Account.action",
-          "parameters" : [ "username", "password", "signon", "_sourcePage", "__fp" ],
-          "values" : [ "j2ee", "j2ee", "Login", "9uKSDs9zQProYKFhXbUeXQHw3qn-5rOKtODFNOzm5eTqU68UEFmjTeW_V66U8YKVdhyR-ZFzn8VgoRatHXxykxjg1JUDzW_9DPgyXOMupVo=", "tA-rabEF9Q0NPZtUzgSENeGEVC9S1LpeeuzORMz_mQfmw3TyeXOa-3PUm5uwWMmH" ]
-        } ]
-      }, {
-        "parameters" : [ "password", "repeatedPassword", "account.firstName", "account.lastName", "account.email", "account.phone", "account.address1", "account.address2", "account.city", "account.state", "account.zip", "account.country", "account.languagePreference", "account.favouriteCategoryId", "account.listOption", "account.bannerOption", "editAccount", "_sourcePage", "__fp" ],
-        "events" : [ {
-          "operationSignature" : "/jpetstore/actions/Account.action",
-          "parameters" : [ "password", "repeatedPassword", "account.firstName", "account.lastName", "account.email", "account.phone", "account.address1", "account.address2", "account.city", "account.state", "account.zip", "account.country", "account.languagePreference", "account.favouriteCategoryId", "account.listOption", "account.bannerOption", "editAccount", "_sourcePage", "__fp" ],
-          "values" : [ "", "", "ABC", "XYX", "yourname@yourdomain.com", "555-555-5555", "901 San Antonio Road", "Christian-Albrechts-Platz 4", "Palo Alto", "CA", "94303", "USA", "english", "DOGS", "true", "true", "Save Account Information", "9Td8hN6PNjPDrr--zZAHlzkcG86gk8iQFQ2KggIty1vJoYvHrOOGyEASFCjV8NcRbDrrhORgl7Qjp42L66Ob6wtQ8wDIty1ij1sla-zMfoCmIJ0gG_NSow==", "zwPqQUP2KZTKMfUuktHWbJf-7QV6yPdcPpCuVTEc3tmcZbCCeSlMa6BjgdO6wGSPZd4WNesZTruWqbiP1aYllptbQzeHgTHqmwFXR7RCdAEcPyVyvjo9IdAxlO_dIglra6iTTkme3UkCq0ZSuXXKJsmaq6l8qWHLOemLqul-Fjl6X9_pb5A910ZoFb4ZIZEM" ]
-        } ]
-      }, {
-        "parameters" : [ "editAccountForm" ],
-        "events" : [ {
-          "operationSignature" : "/jpetstore/actions/Account.action",
-          "parameters" : [ "editAccountForm" ],
-          "values" : [ "" ]
-        } ]
-      } ],
-      "source" : {
-        "name" : "/jpetstore/actions/Account.action"
-      },
-      "target" : {
-        "name" : "/jpetstore/actions/Account.action"
-      }
-    }, {
-      "eventGroups" : [ {
-        "parameters" : [ "signonForm" ],
-        "events" : [ {
-          "operationSignature" : "/jpetstore/actions/Account.action",
-          "parameters" : [ "signonForm" ],
-          "values" : [ "" ]
-        } ]
-      }, {
-        "parameters" : [ "editAccountForm" ],
-        "events" : [ {
-          "operationSignature" : "/jpetstore/actions/Account.action",
-          "parameters" : [ "editAccountForm" ],
-          "values" : [ "" ]
-        } ]
-      } ],
-      "source" : {
-        "name" : "/jpetstore/actions/Catalog.action"
-      },
-      "target" : {
-        "name" : "/jpetstore/actions/Account.action"
-      }
-    }, {
-      "eventGroups" : [ {
-        "parameters" : [ ],
+        "parameters" : [  ],
         "events" : [ {
           "operationSignature" : "/jpetstore/actions/Catalog.action",
           "parameters" : [ ],
@@ -109,5 +30,94 @@
       "target" : {
         "name" : "/jpetstore/actions/Catalog.action"
       }
-    } ]
+    },
+    {
+      "eventGroups" : [ {
+        "parameters" : [ "signonForm" ],
+        "events" : [ {
+          "operationSignature" : "/jpetstore/actions/Account.action",
+          "parameters" : [ "signonForm" ],
+          "values" : [ "" ]
+        } ]
+      },
+      {
+        "parameters" : [ "editAccountForm" ],
+        "events" : [ {
+          "operationSignature" : "/jpetstore/actions/Account.action",
+          "parameters" : [ "editAccountForm" ],
+          "values" : [ "" ]
+        } ]
+      }],
+      "source" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    },
+    {
+      "eventGroups" : [ {
+        "parameters" : ["username", "password", "signon", "_sourcePage", "__fp"],
+        "events" : [ {
+          "operationSignature" : "/jpetstore/actions/Account.action",
+          "parameters" : ["username", "password", "signon", "_sourcePage", "__fp"],
+          "values" : [ "user", "pass", "Login", "-", "-" ]
+        } ]
+      },
+      {
+        "parameters" : ["password", "repeatedPassword", "account.firstName", "account.lastName", "account.email", "account.phone", "account.address1", "account.address2", "account.city", "account.state", "account.zip", "account.country", "account.languagePreference", "account.favouriteCategoryId", "account.listOption", "account.bannerOption", "editAccount", "_sourcePage", "__fp"],
+        "events" : [ {
+          "operationSignature" : "/jpetstore/actions/Account.action",
+          "parameters" : ["password", "repeatedPassword", "account.firstName", "account.lastName", "account.email", "account.phone", "account.address1", "account.address2", "account.city", "account.state", "account.zip", "account.country", "account.languagePreference", "account.favouriteCategoryId", "account.listOption", "account.bannerOption", "editAccount", "_sourcePage", "__fp"],
+          "values" : [ "", "", "", "", "", "", "", "", "", "", "", "", "english", "DOGS", "true", "true", "Save Account Information", "", ""]
+        }]
+      },
+      {
+        "parameters" : [ "editAccountForm" ],
+        "events" : [ {
+          "operationSignature" : "/jpetstore/actions/Account.action",
+          "parameters" : [ "editAccountForm" ],
+          "values" : [ "" ]
+        } ]
+      }
+      ],
+      "source" : {
+        "name" : "/jpetstore/actions/Account.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Account.action"
+      }
+    },
+    {
+      "eventGroups" : [ {
+        "parameters" : [],
+        "events" : [ {
+          "operationSignature" : "/jpetstore/actions/Catalog.action",
+          "parameters" : [],
+          "values" : []
+        } ]
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Account.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    {
+      "eventGroups" : [ {
+        "parameters" : ["listOrders"],
+        "events" : [ {
+          "operationSignature" : "/jpetstore/actions/Order.action",
+          "parameters" : ["listOrders"],
+          "values" : [""]
+        } ]
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Account.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Order.action"
+      }
+    }]
   }

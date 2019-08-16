@@ -1,6 +1,0 @@
-;base node;test node;base edge;test edge;base group;test group;base event;test event;node jaccard index; edge jaccard index; graph-edit-distance
-result-browser-single-fixed_cluster_0;0;1;0;2;0;3;0;9;0.000000;0.500000;39.400000
-result-browser-single-fixed_cluster_1;0;2;1;4;1;7;1;7;0.000000;0.166667;85.000000
-result-browser-single-fixed_cluster_2;0;0;0;0;0;0;0;0;1.000000;1.000000;0.000000
-result-browser-single-fixed_cluster_3;0;1;0;2;0;3;1;10;0.000000;0.500000;45.400000
-result-browser-single-fixed_cluster_4;0;2;0;4;1;5;1;5;0.000000;0.333333;71.000000

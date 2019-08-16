@@ -1,1 +1,0 @@
-result-browser-single-fixed_cluster_1;0;2;1;4;1;7;1;7;0.000000;0.166667;85.000000

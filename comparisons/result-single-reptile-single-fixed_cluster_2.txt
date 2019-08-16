@@ -1,1 +1,0 @@
-result-single-reptile-single-fixed_cluster_2;3;0;7;0;11;0;12;1;0.000000;0.222222;124.000000

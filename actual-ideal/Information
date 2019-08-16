@@ -58,7 +58,7 @@ CatLoverBehavior
 	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
 
 	Cart.action	addItemToCart;workingItemId;2;;EST-14;1
-
+	-----
 	Catalog.action	viewCategory;categoryId;2;;CATS;1
 
 	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
@@ -100,7 +100,7 @@ CatLoverBehavior
 	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
 
 	Cart.action	addItemToCart;workingItemId;2;;EST-14;1
-
+	----
 	Catalog.action
 
 	Account.action	signonForm

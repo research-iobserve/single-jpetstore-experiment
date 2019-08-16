@@ -70,6 +70,14 @@
           "operationSignature" : "/jpetstore/actions/Account.action",
           "parameters" : ["password", "repeatedPassword", "account.firstName", "account.lastName", "account.email", "account.phone", "account.address1", "account.address2", "account.city", "account.state", "account.zip", "account.country", "account.languagePreference", "account.favouriteCategoryId", "account.listOption", "account.bannerOption", "editAccount", "_sourcePage", "__fp"],
           "values" : [ "", "", "", "", "", "", "", "", "", "", "", "", "english", "DOGS", "true", "true", "Save Account Information", "", ""]
+        }]
+      },
+      {
+        "parameters" : [ "editAccountForm" ],
+        "events" : [ {
+          "operationSignature" : "/jpetstore/actions/Account.action",
+          "parameters" : [ "editAccountForm" ],
+          "values" : [ "" ]
         } ]
       }
       ],
@@ -94,6 +102,22 @@
       },
       "target" : {
         "name" : "/jpetstore/actions/Catalog.action"
+      }
+    },
+    {
+      "eventGroups" : [ {
+        "parameters" : ["listOrders"],
+        "events" : [ {
+          "operationSignature" : "/jpetstore/actions/Order.action",
+          "parameters" : ["listOrders"],
+          "values" : [""]
+        } ]
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Account.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Order.action"
       }
     }]
   }

@@ -1,1 +1,0 @@
-result-single-cat-single-fixed_cluster_2;3;0;7;0;11;0;11;0;0.000000;0.222222;118.000000

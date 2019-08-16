@@ -1,1 +1,0 @@
-result-buy-cart-single-fixed_cluster_1;1;1;2;1;2;4;3;5;0.000000;0.571429;64.000000
