@@ -3,7 +3,7 @@
 activityDelay: 1
 webDriverConfiguration:
   baseUrl: http://172.17.0.2:8080/jpetstore/
-  type: org.iobserve.selenium.behavior.ChromeDriverFactory
+  type: org.iobserve.selenium.driver.HtmlUnitDriverFactory
   driver: /home/lars/git/lars-juergensen-bsc/Experiments/tools/chromedriver
   timeout: 1000
 workloads:
@@ -89,14 +89,6 @@ behaviors:
         repetition: { min: 1, max: 1 }
         parameters:
           category: FISH
-  BuyCartBehavior:
-    name: BuyCartBehavior
-    subbehaviors:
-      - name: LoginJPetStoreTask
-        parameters:
-          username: j2ee
-          password: j2ee
-      - name: CheckoutJPetStoreTask
   CatLoverBehavior:
     name: CatLoverBehavior
     subbehaviors:
@@ -110,14 +102,6 @@ behaviors:
           username: j2ee
           password: j2ee
       - name: CheckoutJPetStoreTask
-  CatToCartBehavior:
-    name: CatToCartBehavior
-    subbehaviors:
-      - name: AddCatsToCartTask
-        repetition: { min: 1, max: 1 }
-        parameters:
-          amount: 9
-          itemPosition: 0
   FishLoverBehavior:
     name: FishLoverBehavior
     subbehaviors:
@@ -137,7 +121,7 @@ behaviors:
       - name: CreateNewCustomerTask
         parameters:
           username: Newone
-          password: new
+          password: password
       - name: AddReptilesToCartTask
         repetition: { min: 1, max: 1 }
         parameters:
@@ -146,7 +130,7 @@ behaviors:
       - name: LoginJPetStoreTask
         parameters:
           username: Newone
-          password: new
+          password: password
       - name: CheckoutJPetStoreTask
   SingleCatBuyerBehavior:
     name: SingleCatBuyerBehavior

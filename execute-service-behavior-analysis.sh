@@ -52,8 +52,7 @@ kieker.monitoring.name=JIRA
 kieker.monitoring.hostname=
 kieker.monitoring.metadata=true
 
-iobserve.analysis.source=org.iobserve.service.source.FileSourceCompositeStage
-org.iobserve.service.source.FileSourceCompositeStage.sourceDirectories=$KIEKER_DIRECTORIES
+kieker.tools.source.LogsReaderCompositeStage.logDirectories=$KIEKER_DIRECTORIES
 
 iobserve.analysis.traces=true
 iobserve.analysis.dataFlow=true
@@ -70,7 +69,8 @@ iobserve.analysis.behavior.IModelGenerationFilterFactory=org.iobserve.analysis.s
 
 iobserve.analysis.behavior.triggerInterval=2000
 
-
+org.iobserve.service.behavior.analysis.returnClustering=true
+org.iobserve.service.behavior.analysis.returnMedoids=false
 org.iobserve.service.behavior.analysis.outputUrl=$RESULT_DIR/$EXPERIMENT_ID
 org.iobserve.service.behavior.analysis.epsilon=5
 org.iobserve.service.behavior.analysis.minPts=5

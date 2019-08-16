@@ -1,0 +1,105 @@
+{
+  "nodes" : {
+    "Init" : {
+      "name" : "Init"
+    },
+    "/jpetstore/actions/Cart.action" : {
+      "name" : "/jpetstore/actions/Cart.action"
+    },
+    "/jpetstore/actions/Catalog.action" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    }
+  },
+  "edges" : [ {
+    "eventGroups" : [ {
+      "parameters" : [ ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ ],
+        "values" : [ ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "Init"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    }
+  }, {
+    "eventGroups" : [ {
+      "parameters" : [ "addItemToCart", "workingItemId" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Cart.action",
+        "parameters" : [ "addItemToCart", "workingItemId" ],
+        "values" : [ "", "EST-14" ]
+      }, {
+        "operationSignature" : "/jpetstore/actions/Cart.action",
+        "parameters" : [ "addItemToCart", "workingItemId" ],
+        "values" : [ "", "EST-14" ]
+      }, {
+        "operationSignature" : "/jpetstore/actions/Cart.action",
+        "parameters" : [ "addItemToCart", "workingItemId" ],
+        "values" : [ "", "EST-14" ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Cart.action"
+    }
+  }, {
+    "eventGroups" : [ {
+      "parameters" : [ "viewCategory", "categoryId" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ]
+      }, {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ]
+      }, {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "/jpetstore/actions/Cart.action"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    }
+  }, {
+    "eventGroups" : [ {
+      "parameters" : [ "viewCategory", "categoryId" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "CATS" ]
+      } ]
+    }, {
+      "parameters" : [ "viewProduct", "productId" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ "viewProduct", "productId" ],
+        "values" : [ "", "FL-DSH-01" ]
+      }, {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ "viewProduct", "productId" ],
+        "values" : [ "", "FL-DSH-01" ]
+      }, {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ "viewProduct", "productId" ],
+        "values" : [ "", "FL-DSH-01" ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    }
+  } ]
+}

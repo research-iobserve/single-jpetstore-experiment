@@ -51,5 +51,9 @@ WEB_DRIVER="$BASE_DIR/../tools/chromedriver"
 
 SERVICE_BEHAVIOR_ANALYSIS="$BASE_DIR/../tools/service-behavior-analysis-0.0.3-SNAPSHOT/bin/service-behavior-analysis"
 
+COMPARE_BEHAVIOR_MODELS="$BASE_DIR/../tools/compare-behavior-models-0.0.3-SNAPSHOT/bin/compare-behavior-models"
+
+
+
 
 # end

@@ -1,0 +1,23 @@
+{
+    "nodes" : {
+      "Init" : {
+        "name" : "Init"
+      }
+    },
+    "edges" : [ {
+      "eventGroups" : [ {
+        "parameters" : [ "listOrders" ],
+        "events" : [ {
+          "operationSignature" : "/jpetstore/actions/Order.action",
+          "parameters" : [ "listOrders" ],
+          "values" : [ "" ]
+        } ]
+      } ],
+      "source" : {
+        "name" : "/jpetstore/actions/Account.action"
+      },
+      "target" : {
+        "name" : "/jpetstore/actions/Order.action"
+      }
+    }]
+  }

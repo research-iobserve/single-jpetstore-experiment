@@ -1,0 +1,47 @@
+$0;1565951593744119530;1.14-SNAPSHOT;new-customer-fixed;lars-Aspire-V5-591G;1;false;0;NANOSECONDS;0
+$0;1565951606854102187;1.14-SNAPSHOT;KIEKER;7fb223a7f658;1;false;0;NANOSECONDS;0
+$1;1565951607921478644;-8478259283320897536;13;<no-session-id>;7fb223a7f658;-8478259283320897536;-1;
+$2;1565951607930351080;1565951607927079616;-8478259283320897536;0;public org.mybatis.jpetstore.service.AccountService.<init>();org.mybatis.jpetstore.service.AccountService;1073422362;[]
+$3;1565951607931445521;1565951607929341977;-8478259283320897536;1;public org.mybatis.jpetstore.service.AccountService.<init>();org.mybatis.jpetstore.service.AccountService;1073422362
+$1;1565951608445650455;-8478259283320897535;13;<no-session-id>;7fb223a7f658;-8478259283320897535;-1;
+$2;1565951608445711936;1565951608445594367;-8478259283320897535;0;public org.mybatis.jpetstore.service.CatalogService.<init>();org.mybatis.jpetstore.service.CatalogService;1050744920;[]
+$3;1565951608445767650;1565951608445635026;-8478259283320897535;1;public org.mybatis.jpetstore.service.CatalogService.<init>();org.mybatis.jpetstore.service.CatalogService;1050744920
+$1;1565951608473935619;-8478259283320897534;13;<no-session-id>;7fb223a7f658;-8478259283320897534;-1;
+$2;1565951608474017760;1565951608474085970;-8478259283320897534;0;public org.mybatis.jpetstore.service.OrderService.<init>();org.mybatis.jpetstore.service.OrderService;844321731;[]
+$3;1565951608474067875;1565951608474196897;-8478259283320897534;1;public org.mybatis.jpetstore.service.OrderService.<init>();org.mybatis.jpetstore.service.OrderService;844321731
+$4;1565951608574001418;1565951608569351936;172.17.0.2;jpetstore-service;;249
+$1;1565951610755135172;-8478259283320897533;20;62DF184E8B13B9592C2C87841FC6619D;7fb223a7f658;-8478259283320897533;-1;
+$5;1565951610759853963;1565951610757965030;-8478259283320897533;0;/jpetstore/actions/Catalog.action;/jpetstore;0;0;1
+$2;1565951610785787853;1565951610785441851;-8478259283320897533;1;public org.mybatis.jpetstore.web.actions.AbstractActionBean.<init>();org.mybatis.jpetstore.web.actions.CatalogActionBean;856329931;[net.sourceforge.stripes.action.ActionBean, java.io.Serializable]
+$3;1565951610786499505;1565951610785640810;-8478259283320897533;2;public org.mybatis.jpetstore.web.actions.AbstractActionBean.<init>();org.mybatis.jpetstore.web.actions.CatalogActionBean;856329931
+$2;1565951610786548881;1565951610785769686;-8478259283320897533;3;public org.mybatis.jpetstore.web.actions.CatalogActionBean.<init>();org.mybatis.jpetstore.web.actions.CatalogActionBean;856329931;[org.mybatis.jpetstore.web.actions.AbstractActionBean]
+$3;1565951610786561725;1565951610785881290;-8478259283320897533;4;public org.mybatis.jpetstore.web.actions.CatalogActionBean.<init>();org.mybatis.jpetstore.web.actions.CatalogActionBean;856329931
+$6;1565951610807420274;1565951610805980241;-8478259283320897533;5;public net.sourceforge.stripes.action.ForwardResolution org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain();org.mybatis.jpetstore.web.actions.CatalogActionBean;856329931;[org.mybatis.jpetstore.web.actions.AbstractActionBean]
+$7;1565951610807771150;1565951610806745360;-8478259283320897533;6;public net.sourceforge.stripes.action.ForwardResolution org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain();org.mybatis.jpetstore.web.actions.CatalogActionBean;856329931
+$8;1565951610808813649;1565951610808165835;-8478259283320897533;7;public net.sourceforge.stripes.action.ForwardResolution org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain();org.mybatis.jpetstore.web.actions.CatalogActionBean;856329931
+$8;1565951610808943071;1565951610808340624;-8478259283320897533;8;public net.sourceforge.stripes.action.ForwardResolution org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain();org.mybatis.jpetstore.web.actions.CatalogActionBean;856329931
+$9;1565951611740350956;1565951611739938544;-8478259283320897533;0;/jpetstore/actions/Catalog.action;/jpetstore
+$1;1565951611821329088;-8478259283320897532;21;62DF184E8B13B9592C2C87841FC6619D;7fb223a7f658;-8478259283320897532;-1;
+$5;1565951611821477542;1565951611821303618;-8478259283320897532;0;/jpetstore/css/jpetstore.css;/jpetstore;0;0;1
+$9;1565951611823454440;1565951611822797601;-8478259283320897532;0;/jpetstore/css/jpetstore.css;/jpetstore
+$1;1565951612296690257;-8478259283320897531;22;62DF184E8B13B9592C2C87841FC6619D;7fb223a7f658;-8478259283320897531;-1;
+$5;1565951612296803492;1565951612296724696;-8478259283320897531;0;/jpetstore/actions/Account.action;/jpetstore;1;signonForm;1;;1
+$2;1565951612297107726;1565951612297173274;-8478259283320897531;1;public org.mybatis.jpetstore.web.actions.AbstractActionBean.<init>();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255;[net.sourceforge.stripes.action.ActionBean, java.io.Serializable]
+$3;1565951612297126417;1565951612297194223;-8478259283320897531;2;public org.mybatis.jpetstore.web.actions.AbstractActionBean.<init>();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255
+$2;1565951612297174158;1565951612297271195;-8478259283320897531;3;public org.mybatis.jpetstore.web.actions.AccountActionBean.<init>();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255;[org.mybatis.jpetstore.web.actions.AbstractActionBean]
+$2;1565951612297231980;1565951612297333038;-8478259283320897531;4;public org.mybatis.jpetstore.domain.Account.<init>();org.mybatis.jpetstore.domain.Account;1688768191;[java.io.Serializable]
+$3;1565951612297271133;1565951612297350420;-8478259283320897531;5;public org.mybatis.jpetstore.domain.Account.<init>();org.mybatis.jpetstore.domain.Account;1688768191
+$3;1565951612297283055;1565951612297356098;-8478259283320897531;6;public org.mybatis.jpetstore.web.actions.AccountActionBean.<init>();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255
+$6;1565951612301004293;1565951612300976514;-8478259283320897531;7;public net.sourceforge.stripes.action.Resolution org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255;[org.mybatis.jpetstore.web.actions.AbstractActionBean]
+$7;1565951612301057828;1565951612301046833;-8478259283320897531;8;public net.sourceforge.stripes.action.Resolution org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255
+$8;1565951612301074535;1565951612301063694;-8478259283320897531;9;public net.sourceforge.stripes.action.Resolution org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255
+$8;1565951612301083915;1565951612301069483;-8478259283320897531;10;public net.sourceforge.stripes.action.Resolution org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255
+$9;1565951612649214838;1565951612649239760;-8478259283320897531;0;/jpetstore/actions/Account.action;/jpetstore
+$1;1565951613819047677;-8478259283320897530;23;62DF184E8B13B9592C2C87841FC6619D;7fb223a7f658;-8478259283320897530;-1;
+$5;1565951613819415471;1565951613818705152;-8478259283320897530;0;/jpetstore/actions/Account.action;/jpetstore;1;newAccountForm;1;;1
+$6;1565951613820722174;1565951613820682615;-8478259283320897530;1;public net.sourceforge.stripes.action.Resolution org.mybatis.jpetstore.web.actions.AccountActionBean.newAccountForm();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255;[org.mybatis.jpetstore.web.actions.AbstractActionBean]
+$7;1565951613821019652;1565951613820776744;-8478259283320897530;2;public net.sourceforge.stripes.action.Resolution org.mybatis.jpetstore.web.actions.AccountActionBean.newAccountForm();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255
+$8;1565951613821196325;1565951613820791420;-8478259283320897530;3;public net.sourceforge.stripes.action.Resolution org.mybatis.jpetstore.web.actions.AccountActionBean.newAccountForm();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255
+$8;1565951613821343433;1565951613820795662;-8478259283320897530;4;public net.sourceforge.stripes.action.Resolution org.mybatis.jpetstore.web.actions.AccountActionBean.newAccountForm();org.mybatis.jpetstore.web.actions.AccountActionBean;1765970255
+$9;1565951614098356468;1565951614098378924;-8478259283320897530;0;/jpetstore/actions/Account.action;/jpetstore
+$1;1565951615285644986;-8478259283320897529;24;62DF184E8B13B9592C2C87841FC6619D;7fb223a7f658;-8478259283320897529;-1;

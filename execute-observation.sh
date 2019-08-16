@@ -12,8 +12,9 @@ BASE_DIR=$(cd "$(dirname "$0")"; pwd)
 function stop-jpetstore() {
 	information "Terminate running single-jpetstores ..."
 
-	for I in `docker ps | awk '{ print $1,$2 }' | grep "single-jpetstore" | awk '{ print $1 }'` ; do
+	for I in `docker ps -a| awk '{ print $1,$2 }' | grep "single-jpetstore" | awk '{ print $1 }'` ; do
 		docker stop $I
+		information "stoped a container"
 		docker rm $I
 	done
 
@@ -163,7 +164,7 @@ else
 	information "Running workload driver"
 
         export SELENIUM_EXPERIMENT_WORKLOADS_OPTS=-Dlog4j.configuration=file:///$BASE_DIR/log4j.cfg
-        $WORKLOAD_RUNNER -c $WORKLOAD_PATH -u "$SERVICE_URL" -d "$WEB_DRIVER"
+        $WORKLOAD_RUNNER -c $WORKLOAD_PATH -u "$SERVICE_URL"
 
         sleep 10
 fi
@@ -186,4 +187,3 @@ wait ${COLLECTOR_PID}
 information "Experiment complete."
 
 # end
-
