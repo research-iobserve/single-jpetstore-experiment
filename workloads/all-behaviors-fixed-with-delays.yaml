@@ -1,9 +1,9 @@
 # Example configuration
 ---
-activityDelay: 1
+activityDelay: 10
 webDriverConfiguration:
   baseUrl: http://172.17.0.2:8080/jpetstore/
-  type: org.iobserve.selenium.behavior.ChromeDriverFactory
+  type: org.iobserve.selenium.driver.HtmlUnitDriverFactory
   driver: /home/lars/git/lars-juergensen-bsc/Experiments/tools/chromedriver
   timeout: 1000
 workloads:
@@ -21,24 +21,10 @@ workloads:
       spawnPerSecond: 0.1
       durations: [ 100, 50 ]
       delays: [ 50, 50 ]
-  - name: BuyCartBehavior
-    intensity:
-      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
-      name: BuyCartBehavior
-      spawnPerSecond: 0.1
-      durations: [ 100, 50 ]
-      delays: [ 50, 50 ]
   - name: CatLoverBehavior
     intensity:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
       name: CatLoverBehavior
-      spawnPerSecond: 0.1
-      durations: [ 100, 50 ]
-      delays: [ 50, 50 ]
-  - name: CatToCartBehavior
-    intensity:
-      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
-      name: CatToCartBehavior
       spawnPerSecond: 0.1
       durations: [ 100, 50 ]
       delays: [ 50, 50 ]
@@ -54,7 +40,8 @@ workloads:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
       name: NewCustomerBehavior
       spawnPerSecond: 0.1
-      durations: [ 100 ]
+      durations: [ 100, 50 ]
+      delays: [ 50, 50 ]
   - name: SingleCatBuyerBehavior
     intensity:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
@@ -97,14 +84,6 @@ behaviors:
         repetition: { min: 1, max: 1 }
         parameters:
           category: FISH
-  BuyCartBehavior:
-    name: BuyCartBehavior
-    subbehaviors:
-      - name: LoginJPetStoreTask
-        parameters:
-          username: j2ee
-          password: j2ee
-      - name: CheckoutJPetStoreTask
   CatLoverBehavior:
     name: CatLoverBehavior
     subbehaviors:
@@ -118,14 +97,6 @@ behaviors:
           username: j2ee
           password: j2ee
       - name: CheckoutJPetStoreTask
-  CatToCartBehavior:
-    name: CatToCartBehavior
-    subbehaviors:
-      - name: AddCatsToCartTask
-        repetition: { min: 1, max: 1 }
-        parameters:
-          amount: 9
-          itemPosition: 0
   FishLoverBehavior:
     name: FishLoverBehavior
     subbehaviors:
@@ -145,7 +116,7 @@ behaviors:
       - name: CreateNewCustomerTask
         parameters:
           username: Newone
-          password: new
+          password: password
       - name: AddReptilesToCartTask
         repetition: { min: 1, max: 1 }
         parameters:
@@ -153,8 +124,8 @@ behaviors:
           itemPosition: 1
       - name: LoginJPetStoreTask
         parameters:
-          username: Newone
-          password: new
+          username: j2ee
+          password: j2ee
       - name: CheckoutJPetStoreTask
   SingleCatBuyerBehavior:
     name: SingleCatBuyerBehavior
@@ -182,4 +153,3 @@ behaviors:
           username: j2ee
           password: j2ee
       - name: CheckoutJPetStoreTask
-

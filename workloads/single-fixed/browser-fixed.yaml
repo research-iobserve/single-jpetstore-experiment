@@ -11,7 +11,7 @@ workloads:
     intensity:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
       name: BrowsingUser
-      spawnPerSecond: 0.02
+      spawnPerSecond: 0.1
       durations: [ 100 ]
 behaviors:
   AccountManager:

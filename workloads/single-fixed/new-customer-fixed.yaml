@@ -11,7 +11,7 @@ workloads:
     intensity:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
       name: NewCustomerBehavior
-      spawnPerSecond: 0.02
+      spawnPerSecond: 0.1
       durations: [ 100 ]
 behaviors:
   AccountManager:
@@ -81,8 +81,8 @@ behaviors:
           itemPosition: 1
       - name: LoginJPetStoreTask
         parameters:
-          username: Newone
-          password: password
+          username: j2ee
+          password: j2ee
       - name: CheckoutJPetStoreTask
   SingleCatBuyerBehavior:
     name: SingleCatBuyerBehavior

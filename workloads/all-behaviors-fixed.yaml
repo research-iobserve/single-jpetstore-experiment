@@ -7,52 +7,28 @@ webDriverConfiguration:
   driver: /home/lars/git/lars-juergensen-bsc/Experiments/tools/chromedriver
   timeout: 1000
 workloads:
-  - name: AccountManager
-    intensity:
-      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
-      name: AccountManager
-      spawnPerSecond: 0.1
-      durations: [ 100 ]
   - name: BrowsingUser
     intensity:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
       name: BrowsingUser
       spawnPerSecond: 0.1
       durations: [ 100 ]
-  - name: BuyCartBehavior
+  - name: SingleCatBuyerBehavior
     intensity:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
-      name: BuyCartBehavior
+      name: SingleCatBuyerBehavior
+      spawnPerSecond: 0.1
+      durations: [ 100 ]
+  - name: AccountManager
+    intensity:
+      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
+      name: AccountManager
       spawnPerSecond: 0.1
       durations: [ 100 ]
   - name: CatLoverBehavior
     intensity:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
       name: CatLoverBehavior
-      spawnPerSecond: 0.1
-      durations: [ 100 ]
-  - name: CatToCartBehavior
-    intensity:
-      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
-      name: CatToCartBehavior
-      spawnPerSecond: 0.1
-      durations: [ 100 ]
-  - name: FishLoverBehavior
-    intensity:
-      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
-      name: FishLoverBehavior
-      spawnPerSecond: 0.1
-      durations: [ 100 ]
-  - name: NewCustomerBehavior
-    intensity:
-      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
-      name: NewCustomerBehavior
-      spawnPerSecond: 0.1
-      durations: [ 100 ]
-  - name: SingleCatBuyerBehavior
-    intensity:
-      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
-      name: SingleCatBuyerBehavior
       spawnPerSecond: 0.1
       durations: [ 100 ]
   - name: SingleReptileBuyerBehavior
@@ -129,8 +105,8 @@ behaviors:
           itemPosition: 1
       - name: LoginJPetStoreTask
         parameters:
-          username: Newone
-          password: password
+          username: j2ee
+          password: j2ee
       - name: CheckoutJPetStoreTask
   SingleCatBuyerBehavior:
     name: SingleCatBuyerBehavior
@@ -158,4 +134,3 @@ behaviors:
           username: j2ee
           password: j2ee
       - name: CheckoutJPetStoreTask
-

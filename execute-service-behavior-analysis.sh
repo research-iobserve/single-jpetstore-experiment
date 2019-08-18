@@ -67,17 +67,17 @@ iobserve.analysis.behavior.IEntryCallAcceptanceMatcher=org.iobserve.analysis.sys
 iobserve.analysis.behavior.ITraceSignatureCleanupRewriter=org.iobserve.analysis.systems.jpetstore.JPetStoreTraceSignatureCleanupRewriter
 iobserve.analysis.behavior.IModelGenerationFilterFactory=org.iobserve.analysis.systems.jpetstore.JPetStoreEntryCallRulesFactory
 
-iobserve.analysis.behavior.triggerInterval=2000
+iobserve.analysis.behavior.triggerInterval=5000
 
-org.iobserve.service.behavior.analysis.returnClustering=true
-org.iobserve.service.behavior.analysis.returnMedoids=false
+org.iobserve.service.behavior.analysis.returnClustering=false
+org.iobserve.service.behavior.analysis.returnMedoids=true
 org.iobserve.service.behavior.analysis.outputUrl=$RESULT_DIR/$EXPERIMENT_ID
-org.iobserve.service.behavior.analysis.epsilon=5
-org.iobserve.service.behavior.analysis.minPts=5
+org.iobserve.service.behavior.analysis.epsilon=9
+org.iobserve.service.behavior.analysis.minPts=7
 org.iobserve.service.behavior.analysis.maxModelAmount=-1
-org.iobserve.service.behavior.analysis.nodeInsertionCost=10
-org.iobserve.service.behavior.analysis.edgeInsertionCost=5
-org.iobserve.service.behavior.analysis.eventGroupInsertionCost=4
+org.iobserve.service.behavior.analysis.nodeInsertionCost=80
+org.iobserve.service.behavior.analysis.edgeInsertionCost=30
+org.iobserve.service.behavior.analysis.eventGroupInsertionCost=10
 EOF
 
 information "start analysis"

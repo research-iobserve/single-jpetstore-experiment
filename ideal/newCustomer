@@ -99,6 +99,7 @@
         },
         {
           "parameters": [
+            "username",
             "password",
             "repeatedPassword",
             "account.firstName",
@@ -113,9 +114,7 @@
             "account.country",
             "account.languagePreference",
             "account.favouriteCategoryId",
-            "account.listOption",
-            "account.bannerOption",
-            "editAccount",
+            "newAccount",
             "_sourcePage",
             "__fp"
           ],
@@ -123,6 +122,7 @@
             {
               "operationSignature": "/jpetstore/actions/Account.action",
               "parameters": [
+                "username",
                 "password",
                 "repeatedPassword",
                 "account.firstName",
@@ -137,9 +137,7 @@
                 "account.country",
                 "account.languagePreference",
                 "account.favouriteCategoryId",
-                "account.listOption",
-                "account.bannerOption",
-                "editAccount",
+                "newAccount",
                 "_sourcePage",
                 "__fp"
               ],
@@ -156,10 +154,9 @@
                 "",
                 "",
                 "",
+                "",
                 "english",
                 "DOGS",
-                "true",
-                "false",
                 "Save Account Information",
                 "",
                 ""

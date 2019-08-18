@@ -1,0 +1,1 @@
+result-single-reptile-test2_cluster_1;0;0;0;0;0;2;2;4;1.000000;1.000000;24.000000

@@ -1,0 +1,8 @@
+;base node;test node;base edge;test edge;base group;test group;base event;test event;node jaccard index; edge jaccard index; graph-edit-distance
+result-fishLover-test2_cluster_0;0;0;0;0;1;0;26;5;1.000000;1.000000;31.300000
+result-fishLover-test2_cluster_1;0;0;0;0;1;2;26;7;1.000000;1.000000;55.300000
+result-fishLover-test2_cluster_2;0;0;0;0;1;0;26;5;1.000000;1.000000;31.300000
+result-fishLover-test2_cluster_3;1;0;4;2;10;6;31;44;0.000000;0.454545;309.600000
+result-fishLover-test2_cluster_4;3;0;7;0;10;1;32;9;0.000000;0.222222;343.200000
+result-fishLover-test2_cluster_5;0;0;0;0;0;0;26;164;1.000000;1.000000;92.800000
+result-fishLover-test2_cluster_6;0;0;0;0;0;0;2;2;1.000000;1.000000;97.000000

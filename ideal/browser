@@ -103,6 +103,17 @@
                 "",
                 "EST-1"
               ]
+            },
+	    {
+              "operationSignature": "/jpetstore/actions/Catalog.action",
+              "parameters": [
+                "viewItem",
+                "itemId"
+              ],
+              "values": [
+                "",
+                "EST-14"
+              ]
             }
           ]
         },

@@ -1,0 +1,183 @@
+{
+  "nodes" : {
+    "Init" : {
+      "name" : "Init"
+    },
+    "/jpetstore/actions/Cart.action" : {
+      "name" : "/jpetstore/actions/Cart.action"
+    },
+    "/jpetstore/actions/Catalog.action" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    },
+    "/jpetstore/actions/Order.action" : {
+      "name" : "/jpetstore/actions/Order.action"
+    },
+    "/jpetstore/actions/Account.action" : {
+      "name" : "/jpetstore/actions/Account.action"
+    }
+  },
+  "edges" : [ {
+    "eventGroups" : [ {
+      "parameters" : [ ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ ],
+        "values" : [ ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "Init"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    }
+  }, {
+    "eventGroups" : [ {
+      "parameters" : [ "order.cardType", "order.creditCard", "order.expiryDate", "order.billToFirstName", "order.billToLastName", "order.billAddress1", "order.billAddress2", "order.billCity", "order.billState", "order.billZip", "order.billCountry", "newOrder", "_sourcePage", "__fp" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Order.action",
+        "parameters" : [ "order.cardType", "order.creditCard", "order.expiryDate", "order.billToFirstName", "order.billToLastName", "order.billAddress1", "order.billAddress2", "order.billCity", "order.billState", "order.billZip", "order.billCountry", "newOrder", "_sourcePage", "__fp" ],
+        "values" : [ "Visa", "999 9999 9999 9999", "12/03", "ABC", "XYX", "901 San Antonio Road", "MS UCUP02-206", "Palo Alto", "CA", "94303", "USA", "Continue", "wIpkACeYdn-MtiIDrfIxkVgUD0HlMgrcLfWV650dLKEG5E953ZWAnalTE1HlnozSJJIf4CrDO1t1MlqFVgbKIsv5OnLbga0KbKdS4cVMODA=", "aUfH69_Xxy44w05T0np2awXsCkrLxWmTsTYQNumnWcrLYGxD2AndS8N4GemD0u_CK0ZcE1jrI-rVbF1ieud89wKn6iGxcvLaZc4XdC-WsM7Cj82QzyImoQ==" ]
+      } ]
+    }, {
+      "parameters" : [ "newOrder", "confirmed" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Order.action",
+        "parameters" : [ "newOrder", "confirmed" ],
+        "values" : [ "", "true" ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "/jpetstore/actions/Order.action"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Order.action"
+    }
+  }, {
+    "eventGroups" : [ {
+      "parameters" : [ "viewCategory", "categoryId" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ "viewCategory", "categoryId" ],
+        "values" : [ "", "REPTILES" ]
+      } ]
+    }, {
+      "parameters" : [ "viewProduct", "productId" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ "viewProduct", "productId" ],
+        "values" : [ "", "RP-LI-02" ]
+      } ]
+    }, {
+      "parameters" : [ ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ ],
+        "values" : [ ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    }
+  }, {
+    "eventGroups" : [ {
+      "parameters" : [ "signonForm" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Account.action",
+        "parameters" : [ "signonForm" ],
+        "values" : [ "" ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Account.action"
+    }
+  }, {
+    "eventGroups" : [ {
+      "parameters" : [ "newOrderForm" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Order.action",
+        "parameters" : [ "newOrderForm" ],
+        "values" : [ "" ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "/jpetstore/actions/Cart.action"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Order.action"
+    }
+  }, {
+    "eventGroups" : [ {
+      "parameters" : [ "username", "password", "signon", "_sourcePage", "__fp" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Account.action",
+        "parameters" : [ "username", "password", "signon", "_sourcePage", "__fp" ],
+        "values" : [ "j2ee", "j2ee", "Login", "NrIWUHZHIl1pKqjFm_6xRdQgUrpWPSvemdmngV2BjGCEsEwojvuk1oy2habVXnacD9J8lCyrsv6-K72db8z1WTtwHlcXnT4Yl-U0trGCx9w=", "TSn6sT8ZGRKTWPqHL-QnBPB9FYl-dwX1SXlPXPdDTYrvzWdpmDHvJzKE9ZU93JdV" ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "/jpetstore/actions/Account.action"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Account.action"
+    }
+  }, {
+    "eventGroups" : [ {
+      "parameters" : [ ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ ],
+        "values" : [ ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "/jpetstore/actions/Cart.action"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    }
+  }, {
+    "eventGroups" : [ {
+      "parameters" : [ ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Catalog.action",
+        "parameters" : [ ],
+        "values" : [ ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "/jpetstore/actions/Account.action"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    }
+  }, {
+    "eventGroups" : [ {
+      "parameters" : [ "addItemToCart", "workingItemId" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Cart.action",
+        "parameters" : [ "addItemToCart", "workingItemId" ],
+        "values" : [ "", "EST-13" ]
+      } ]
+    }, {
+      "parameters" : [ "viewCart" ],
+      "events" : [ {
+        "operationSignature" : "/jpetstore/actions/Cart.action",
+        "parameters" : [ "viewCart" ],
+        "values" : [ "" ]
+      } ]
+    } ],
+    "source" : {
+      "name" : "/jpetstore/actions/Catalog.action"
+    },
+    "target" : {
+      "name" : "/jpetstore/actions/Cart.action"
+    }
+  } ]
+}
