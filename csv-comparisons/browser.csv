@@ -1,8 +1,8 @@
 ;base node;test node;base edge;test edge;base group;test group;base event;test event;node jaccard index; edge jaccard index; graph-edit-distance
-result-browser-test2_cluster_0;0;3;0;7;1;9;5;10;0.000000;0.222222;310.000000
-result-browser-test2_cluster_1;0;3;0;7;1;11;6;15;0.000000;0.222222;338.200000
-result-browser-test2_cluster_2;0;3;0;7;1;9;6;11;0.000000;0.222222;316.000000
-result-browser-test2_cluster_3;0;2;1;6;4;9;7;46;0.000000;0.125000;316.300000
-result-browser-test2_cluster_4;0;0;0;0;0;0;3;8;1.000000;1.000000;18.000000
-result-browser-test2_cluster_5;0;3;0;7;1;10;4;115;0.000000;0.222222;447.200000
-result-browser-test2_cluster_6;0;3;0;7;1;10;4;91;0.000000;0.222222;381.500000
+result-browser-all-behaviors-fixed-with-delays_cluster_0;0;3;0;7;1;9;5;10;0.000000;0.222222;310.000000
+result-browser-all-behaviors-fixed-with-delays_cluster_1;0;3;0;7;1;11;6;15;0.000000;0.222222;338.200000
+result-browser-all-behaviors-fixed-with-delays_cluster_2;0;2;1;4;4;7;7;7;0.000000;0.166667;261.000000
+result-browser-all-behaviors-fixed-with-delays_cluster_3;0;0;0;0;0;0;3;3;1.000000;1.000000;0.000000
+result-browser-all-behaviors-fixed-with-delays_cluster_4;0;3;0;7;1;9;4;34;0.000000;0.222222;326.700000
+result-browser-all-behaviors-fixed-with-delays_cluster_5;0;3;0;7;1;9;4;24;0.000000;0.222222;326.700000
+result-browser-all-behaviors-fixed-with-delays_cluster_6;0;3;0;7;1;9;6;11;0.000000;0.222222;316.000000

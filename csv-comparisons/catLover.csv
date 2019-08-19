@@ -1,8 +1,8 @@
 ;base node;test node;base edge;test edge;base group;test group;base event;test event;node jaccard index; edge jaccard index; graph-edit-distance
-result-catLover-test2_cluster_0;0;0;0;0;1;0;25;4;1.000000;1.000000;25.300000
-result-catLover-test2_cluster_1;0;0;0;0;1;2;26;7;1.000000;1.000000;55.300000
-result-catLover-test2_cluster_2;0;0;0;0;1;0;26;5;1.000000;1.000000;31.300000
-result-catLover-test2_cluster_3;1;0;4;2;10;6;31;44;0.000000;0.454545;309.600000
-result-catLover-test2_cluster_4;3;0;7;0;10;1;23;11;0.000000;0.222222;341.400000
-result-catLover-test2_cluster_5;0;0;0;0;0;0;2;2;1.000000;1.000000;235.000000
-result-catLover-test2_cluster_6;0;0;0;0;0;0;26;83;1.000000;1.000000;57.400000
+result-catLover-all-behaviors-fixed-with-delays_cluster_0;0;0;0;0;1;0;25;4;1.000000;1.000000;25.300000
+result-catLover-all-behaviors-fixed-with-delays_cluster_1;0;0;0;0;1;2;26;7;1.000000;1.000000;55.300000
+result-catLover-all-behaviors-fixed-with-delays_cluster_2;1;0;5;1;10;4;31;5;0.000000;0.400000;284.300000
+result-catLover-all-behaviors-fixed-with-delays_cluster_3;3;0;7;0;10;1;23;4;0.000000;0.222222;335.600000
+result-catLover-all-behaviors-fixed-with-delays_cluster_4;0;0;0;0;1;0;27;29;1.000000;1.000000;44.800000
+result-catLover-all-behaviors-fixed-with-delays_cluster_5;0;0;0;0;1;0;3;2;1.000000;1.000000;16.000000
+result-catLover-all-behaviors-fixed-with-delays_cluster_6;0;0;0;0;1;0;26;5;1.000000;1.000000;31.300000

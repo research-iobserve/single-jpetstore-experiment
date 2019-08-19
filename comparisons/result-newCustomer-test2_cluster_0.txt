@@ -1,1 +1,0 @@
-result-newCustomer-test2_cluster_0;0;0;0;0;2;1;7;6;1.000000;1.000000;44.000000

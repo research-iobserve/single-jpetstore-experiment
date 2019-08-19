@@ -1,0 +1,1 @@
+result-single-reptile-all-behaviors-fixed-with-delays_cluster_4;0;0;0;0;1;1;6;29;1.000000;1.000000;43.500000

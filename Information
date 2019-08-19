@@ -1,0 +1,310 @@
+Behaviros:
+
+AccountManager
+	LoginJPetStoreTask
+	ChangeAccountInformationTask
+	ViewOrderTask
+	
+
+	Catalog.action
+
+	Account.action	signonForm
+
+	Account.action	username password
+
+	Catalog.action
+
+	Account.action	editAccountForm
+
+	Account.action	password, firstname, lastname, etc
+
+	Account.action	editAccountForm
+
+	Order.action	listOrders
+
+
+BrowsingUser
+	ViewProductTask
+	ViewProductTask
+
+
+	Catalog.action
+
+	Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
+
+	Catalog.action	viewItem;itemId;2;;EST-14;1
+
+	Catalog.action
+
+	Catalog.action	viewCategory;categoryId;2;;FISH;1
+
+	Catalog.action	viewProduct;productId;2;;FI-SW-01;1
+	
+	Catalog.action	viewItem;itemId;2;;EST-1;1
+
+
+
+CatLoverBehavior
+	AddCatsToCartTask
+	LoginJPetStoreTask
+	CheckoutJPetStoreTask
+
+	Catalog.action
+
+	Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
+
+	Cart.action	addItemToCart;workingItemId;2;;EST-14;1
+	-----
+	Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
+
+	Cart.action	addItemToCart;workingItemId;2;;EST-14;1
+
+	Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
+
+	Cart.action	addItemToCart;workingItemId;2;;EST-14;1
+
+	Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
+
+	Cart.action	addItemToCart;workingItemId;2;;EST-14;1
+
+	Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
+
+	Cart.action	addItemToCart;workingItemId;2;;EST-14;1
+
+	Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
+
+	Cart.action	addItemToCart;workingItemId;2;;EST-14;1
+
+	Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
+
+	Cart.action	addItemToCart;workingItemId;2;;EST-14;1
+
+	Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
+
+	Cart.action	addItemToCart;workingItemId;2;;EST-14;1
+	----
+	Catalog.action
+
+	Account.action	signonForm
+
+	Account.action	username password
+
+	Catalog.action
+
+	Catalog.action
+
+	Cart.action	viewCart;1;;1
+
+	Order.action	newOrderForm;1;;1
+
+	Order.action	order.cardType;order.creditCard;order.expiryDate;order.billToFirstName;order.billToLastName;order.billAddress1;order.billAddress2;order.billCity;order.billState;order.billZip;order.billCountry;newOrder;_sourcePage;__fp;14;Visa;999 9999 9999 9999;12/03;ABC;XYX;901 San Antonio Road;MS UCUP02-206;Palo Alto;CA;94303;USA;Continue;MeK-JS1L0pXF4b0CIKZXMnKj4pu-ElML-FbS7bljNkeJpO3itTsZBpf4yQs4cQIGkMJ-PQ-ACWGYr68Wzg9-OFY6QIJGyqtHoDyjm5gWa5o=;MzuB-dlfFcioRQVqQs59X-EQzNmmFVxiqCfzBl_STv70sbYX6JguhkLmgE4QyX7XFQGWxywz7tnlk7421H54hQe3aJNybmwP00i3XPWYDxyU4BNmnBUurA==;1
+
+	Order.action	newOrder;confirmed;2;;true;1
+
+FishLoverBehavior
+	AddFishToCartTask
+	LoginJPetStoreTask
+	CheckoutJPetStoreTask
+
+	see CatLoverBehavior
+
+
+NewCustomerBehavior
+	CreateNewCustomerTask
+	AddReptilesToCartTask
+	LoginJPetStoreTask
+	CheckoutJPetStoreTask
+
+	Catalog.action
+
+	Account.action	signonForm;1;;1
+
+	Account.action	newAccountForm;1;;1
+
+	Account.action	username;password;repeatedPassword;account.firstName;account.lastName;account.email;account.phone;account.address1;account.address2;account.city;account.state;account.zip;account.country;account.languagePreference;account.favouriteCategoryId;newAccount;_sourcePage;__fp;18;Newone;password;password;New;Customer;new@customer.de;12345;Wohnort;Geschaeftssitz 3;Kiel;S-H;24118;Germany;english;FISH;Save Account Information;HxhXZt2gxWNRMbAn0cUTrQMoR-ZXpUQw0wH_YJZoorvn1_U3m51pI0dX61j6koNbm9rYvTnpK1scj79le_VUBCiEBkh-rrmWa_YhcK3JUdQ=;9aMHeXLFbjmDTxPMVJ2qwQV3v9ohm_nzMEjYBTD_-vUE7_z5LfBrSyVRvWS9TlML8t4oy1t5mp2oThns0cQUjI98aiOG7MtJoJoCh0BkHd0R8OrK0TPjG2uKa0JvrW0PJiZ8pcK3LJqrHoX2H034UqXUmnBCkN5bukYJQCw6-bhf_IKY4KlvrGVKr374w4R7;1
+		
+	Catalog.action
+
+	Catalog.action	viewCategory;categoryId;2;;REPTILES;1
+	Catalog.action	viewProduct;productId;2;;RP-LI-02;1
+	Cart.action	addItemToCart;workingItemId;2;;EST-13;1
+	Catalog.action
+	Account.action	signonForm
+
+	Account.action	username;password;signon;_sourcePage;__fp;5;Newone;password;Login;fOMukoziQmSZUOa9zvNBC-SpGzn7Hli0y1k2co-IDeVhMTdHGkLtgAM1G3QXIEiObrkcJ-Il_JZQ5QEndaq0ClG63qdkR9h-XTUgaCN5ng0=;7zGTf5mhkxj-_C5MWKuFTFgmgA_oAOtvsa3hTLCkexjrE0DzH-SXRJnDDoxO1e5K;1
+
+	Catalog.action
+
+	Catalog.action
+
+	Cart.action	viewCart;1;;1
+
+	Order.action	newOrderForm;1;;1
+
+	Order.action	14;order.cardType;order.creditCard;order.expiryDate;order.billToFirstName;order.billToLastName;order.billAddress1;order.billAddress2;order.billCity;order.billState;order.billZip;order.billCountry;newOrder;_sourcePage;__fp;14;Visa;999 9999 9999 9999;12/03;New;Customer;Wohnort;Geschaeftssitz 3;Kiel;S-H;24118;Germany;Continue;-AeHI58yIrfFZ15IBe8N8UYKOHbLPI6N__7OGb475xkjzhqK_opmgapMjspZJvjUrtnbahcUeuBDIsEVMFyvKzPIZWCeZB7xyHlUJhxLWkU=;0B6gag3QdqPt_HSH8fU2kr979NoEI3Damfp6PeZZ05lrIj2wEyG9XEUzKlklavcxT7PPonznfZAMVr-dglFmRjy5Tf2XRL1xXB9as5Q7w-TgkwKHxLeBxw==;1
+
+	Order.action	newOrder;confirmed;2;;true;1
+
+SingleCatBuyerBehavior
+	AddCatsToCartTask
+	LoginJPetStoreTask
+	CheckoutJPetStoreTask
+
+
+
+	Catalog.action
+
+	Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+	Catalog.action	viewProduct;productId;2;;FL-DLH-02;1
+
+	Cart.action	addItemToCart;workingItemId;2;;EST-16;1
+
+	Catalog.action	
+
+	Account.action	signonForm;1;;1
+
+	Account.action	username;password;signon;_sourcePage;__fp;5;j2ee;j2ee;Login;SVrSxm6FitGu6tnk230K_sJpBt9PUr2Zm8XNFEzpmxCPBOqecsMoSGhwMavUqJWsX7g4OZxnl5lRUsFFj3WAuodwMkdQcLCTLKah_HsYwW4=;fY7aT0bbppsvAKlEz17jPJuv3JHQMEY1btg4LckSZm8J0_hVTXMAlOokB9fpQgfR;1
+
+	Catalog.action
+
+	Catalog.action
+
+	Cart.action	viewCart;1;;1
+
+	Order.action	newOrderForm;1;;1
+
+	Order.action	order.cardType;order.creditCard;order.expiryDate;order.billToFirstName;order.billToLastName;order.billAddress1;order.billAddress2;order.billCity;order.billState;order.billZip;order.billCountry;newOrder;_sourcePage;__fp;14;Visa;999 9999 9999 9999;12/03;ABC;XYX;901 San Antonio Road;MS UCUP02-206;Palo Alto;CA;94303;USA;Continue;MeK-JS1L0pXF4b0CIKZXMnKj4pu-ElML-FbS7bljNkeJpO3itTsZBpf4yQs4cQIGkMJ-PQ-ACWGYr68Wzg9-OFY6QIJGyqtHoDyjm5gWa5o=;MzuB-dlfFcioRQVqQs59X-EQzNmmFVxiqCfzBl_STv70sbYX6JguhkLmgE4QyX7XFQGWxywz7tnlk7421H54hQe3aJNybmwP00i3XPWYDxyU4BNmnBUurA==;1
+
+	Order.action	newOrder;confirmed;2;;true;1
+
+
+
+
+
+
+
+
+SingleReptileBuyerBehavior
+	AddReptilesToCartTask
+	LoginJPetStoreTask
+	CheckoutJPetStoreTask
+
+	Catalog.action
+
+	Catalog.action	viewCategory;categoryId;2;;REPTILES;1
+
+	Catalog.action	viewProduct;productId;2;;RP-LI-02;1
+
+	Cart.action	addItemToCart;workingItemId;2;;EST-13;1
+
+	Catalog.action	
+
+	Account.action	signonForm;1;;1
+
+	Account.action	username;password;signon;_sourcePage;__fp;5;j2ee;j2ee;Login;SVrSxm6FitGu6tnk230K_sJpBt9PUr2Zm8XNFEzpmxCPBOqecsMoSGhwMavUqJWsX7g4OZxnl5lRUsFFj3WAuodwMkdQcLCTLKah_HsYwW4=;fY7aT0bbppsvAKlEz17jPJuv3JHQMEY1btg4LckSZm8J0_hVTXMAlOokB9fpQgfR;1
+
+	Catalog.action
+
+	Catalog.action
+
+	Cart.action	viewCart;1;;1
+
+	Order.action	newOrderForm;1;;1
+
+	Order.action	order.cardType;order.creditCard;order.expiryDate;order.billToFirstName;order.billToLastName;order.billAddress1;order.billAddress2;order.billCity;order.billState;order.billZip;order.billCountry;newOrder;_sourcePage;__fp;14;Visa;999 9999 9999 9999;12/03;ABC;XYX;901 San Antonio Road;MS UCUP02-206;Palo Alto;CA;94303;USA;Continue;MeK-JS1L0pXF4b0CIKZXMnKj4pu-ElML-FbS7bljNkeJpO3itTsZBpf4yQs4cQIGkMJ-PQ-ACWGYr68Wzg9-OFY6QIJGyqtHoDyjm5gWa5o=;MzuB-dlfFcioRQVqQs59X-EQzNmmFVxiqCfzBl_STv70sbYX6JguhkLmgE4QyX7XFQGWxywz7tnlk7421H54hQe3aJNybmwP00i3XPWYDxyU4BNmnBUurA==;1
+
+	Order.action	newOrder;confirmed;2;;true;1
+
+
+
+/*********************************************************************************************************************************************+************************/
+Tasks: 
+
+CreateNewCustomerTask
+
+	Catalog.action
+
+	Account.action	signonForm;1;;1
+
+	Account.action	newAccountForm;1;;1
+
+	Account.action	username;password;repeatedPassword;account.firstName;account.lastName;account.email;account.phone;account.address1;account.address2;account.city;account.state;account.zip;account.country;account.languagePreference;account.favouriteCategoryId;newAccount;_sourcePage;__fp;18;Newone;password;password;New;Customer;new@customer.de;12345;Wohnort;Geschaeftssitz 3;Kiel;S-H;24118;Germany;english;FISH;Save Account Information;HxhXZt2gxWNRMbAn0cUTrQMoR-ZXpUQw0wH_YJZoorvn1_U3m51pI0dX61j6koNbm9rYvTnpK1scj79le_VUBCiEBkh-rrmWa_YhcK3JUdQ=;9aMHeXLFbjmDTxPMVJ2qwQV3v9ohm_nzMEjYBTD_-vUE7_z5LfBrSyVRvWS9TlML8t4oy1t5mp2oThns0cQUjI98aiOG7MtJoJoCh0BkHd0R8OrK0TPjG2uKa0JvrW0PJiZ8pcK3LJqrHoX2H034UqXUmnBCkN5bukYJQCw6-bhf_IKY4KlvrGVKr374w4R7;1
+
+LoginJPetStoreTask
+
+	Catalog.action
+
+	Account.action	signonForm
+
+	Account.action	username password
+
+	Catalog.action
+
+CheckoutJPetStoreTask
+
+	Catalog.action
+
+	Cart.action	viewCart;1;;1
+
+	Order.action	newOrderForm;1;;1
+
+	Order.action	order.cardType;order.creditCard;order.expiryDate;order.billToFirstName;order.billToLastName;order.billAddress1;order.billAddress2;order.billCity;order.billState;order.billZip;order.billCountry;newOrder;_sourcePage;__fp;14;Visa;999 9999 9999 9999;12/03;ABC;XYX;901 San Antonio Road;MS UCUP02-206;Palo Alto;CA;94303;USA;Continue;MeK-JS1L0pXF4b0CIKZXMnKj4pu-ElML-FbS7bljNkeJpO3itTsZBpf4yQs4cQIGkMJ-PQ-ACWGYr68Wzg9-OFY6QIJGyqtHoDyjm5gWa5o=;MzuB-dlfFcioRQVqQs59X-EQzNmmFVxiqCfzBl_STv70sbYX6JguhkLmgE4QyX7XFQGWxywz7tnlk7421H54hQe3aJNybmwP00i3XPWYDxyU4BNmnBUurA==;1
+
+	Order.action	newOrder;confirmed;2;;true;1
+
+ChangeAccountInformationTask
+
+	Catalog.action
+
+	Account.action	editAccountForm
+
+	Account.action	password, firstname, lastname, etc
+
+	Account.action	editAccountForm
+
+ViewOrderTask
+
+	Order.action	listOrders
+
+ViewProductTask
+	Catalog.action
+
+	Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+	Catalog.action	viewProduct;productId;2;;FL-DSH-01;1
+
+	Catalog.action	viewItem;itemId;2;;EST-14;1
+
+AddCatsToCartTask
+	Catalog.action
+
+	amount x {
+		Catalog.action	viewCategory;categoryId;2;;CATS;1
+
+		Catalog.action	viewProduct;productId;2;;FL-DLH-02;1
+
+		Cart.action	addItemToCart;workingItemId;2;;EST-16;1
+	}
+AddFishToCartTask
+	see AddCatsToCartTask
+AddReptilesToCartTask
+	see AddCatsToCartTask

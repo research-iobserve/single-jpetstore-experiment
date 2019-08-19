@@ -1,8 +1,8 @@
 ;base node;test node;base edge;test edge;base group;test group;base event;test event;node jaccard index; edge jaccard index; graph-edit-distance
-result-single-cat-test2_cluster_0;0;0;0;0;0;0;2;2;1.000000;1.000000;0.000000
-result-single-cat-test2_cluster_1;0;0;0;0;0;2;5;7;1.000000;1.000000;34.000000
-result-single-cat-test2_cluster_2;0;0;0;0;0;0;5;5;1.000000;1.000000;10.000000
-result-single-cat-test2_cluster_3;1;0;4;2;9;6;10;44;0.000000;0.454545;288.300000
-result-single-cat-test2_cluster_4;3;0;7;0;9;1;10;13;0.000000;0.222222;316.900000
-result-single-cat-test2_cluster_5;0;0;0;0;0;1;4;158;1.000000;1.000000;100.000000
-result-single-cat-test2_cluster_6;0;0;0;0;0;1;5;83;1.000000;1.000000;56.100000
+result-single-cat-all-behaviors-fixed-with-delays_cluster_0;0;0;0;0;0;0;2;2;1.000000;1.000000;0.000000
+result-single-cat-all-behaviors-fixed-with-delays_cluster_1;0;0;0;0;0;2;5;7;1.000000;1.000000;34.000000
+result-single-cat-all-behaviors-fixed-with-delays_cluster_2;1;0;5;1;9;4;10;5;0.000000;0.400000;263.000000
+result-single-cat-all-behaviors-fixed-with-delays_cluster_3;3;0;7;0;9;1;10;5;0.000000;0.222222;310.000000
+result-single-cat-all-behaviors-fixed-with-delays_cluster_4;0;0;0;0;1;1;6;29;1.000000;1.000000;43.500000
+result-single-cat-all-behaviors-fixed-with-delays_cluster_5;0;0;0;0;1;1;5;28;1.000000;1.000000;37.500000
+result-single-cat-all-behaviors-fixed-with-delays_cluster_6;0;0;0;0;0;0;5;5;1.000000;1.000000;10.000000
