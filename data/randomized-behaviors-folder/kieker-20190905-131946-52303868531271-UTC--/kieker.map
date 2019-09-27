@@ -1,0 +1,10 @@
+$0=kieker.common.record.misc.KiekerMetadataRecord
+$1=kieker.common.record.flow.trace.ApplicationTraceMetadata
+$2=kieker.common.record.flow.trace.operation.constructor.object.BeforeConstructorObjectInterfaceEvent
+$3=kieker.common.record.flow.trace.operation.constructor.object.AfterConstructorObjectEvent
+$4=org.iobserve.common.record.Privacy_ServletDeployedEvent
+$5=org.iobserve.common.record.EntryLevelBeforeOperationEvent
+$6=kieker.common.record.flow.trace.operation.object.BeforeOperationObjectInterfaceEvent
+$7=kieker.common.record.flow.trace.operation.object.BeforeOperationObjectEvent
+$8=kieker.common.record.flow.trace.operation.object.AfterOperationObjectEvent
+$9=kieker.common.record.flow.trace.operation.AfterOperationEvent

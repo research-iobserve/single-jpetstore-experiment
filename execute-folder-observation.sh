@@ -104,12 +104,10 @@ cat << EOF > collector.config
 kieker.monitoring.name=${EXPERIMENT_ID}
 kieker.monitoring.hostname=
 kieker.monitoring.metadata=true
-
 # TCP collector
 iobserve.service.reader=org.iobserve.service.source.MultipleConnectionTcpCompositeStage
 org.iobserve.service.source.MultipleConnectionTcpCompositeStage.port=9876
 org.iobserve.service.source.MultipleConnectionTcpCompositeStage.capacity=8192
-
 # dump stage
 kieker.monitoring.writer=kieker.monitoring.writer.filesystem.FileWriter
 kieker.monitoring.writer.filesystem.FileWriter.customStoragePath=$COLLECTOR_DATA_DIR/

@@ -1,1 +1,0 @@
-result-newCustomer-all-behaviors-fixed-with-delays_cluster_4;0;0;0;0;3;2;8;30;1.000000;1.000000;77.500000

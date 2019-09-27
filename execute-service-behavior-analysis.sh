@@ -48,8 +48,7 @@ information "Kieker directories $KIEKER_DIRECTORIES"
 
 cat << EOF > analysis.config
 ## The name of the Kieker instance.
-kieker.monitoring.name=JIRA
-kieker.monitoring.hostname=
+
 kieker.monitoring.metadata=true
 
 kieker.tools.source.LogsReaderCompositeStage.logDirectories=$KIEKER_DIRECTORIES
@@ -58,22 +57,19 @@ iobserve.analysis.traces=true
 iobserve.analysis.dataFlow=true
 iobserve.analysis.singleEventMode=true
 
-iobserve.analysis.model.pcm.directory.db=$DB_DIR
-iobserve.analysis.model.pcm.directory.init=$PCM_DIR
-
 # trace preparation (note they should be fixed)
 iobserve.analysis.behavior.IEntryCallTraceMatcher=org.iobserve.analysis.systems.jpetstore.JPetStoreCallTraceMatcher
 iobserve.analysis.behavior.IEntryCallAcceptanceMatcher=org.iobserve.analysis.systems.jpetstore.JPetStoreTraceAcceptanceMatcher
 iobserve.analysis.behavior.ITraceSignatureCleanupRewriter=org.iobserve.analysis.systems.jpetstore.JPetStoreTraceSignatureCleanupRewriter
 iobserve.analysis.behavior.IModelGenerationFilterFactory=org.iobserve.analysis.systems.jpetstore.JPetStoreEntryCallRulesFactory
 
-iobserve.analysis.behavior.triggerInterval=5000
+iobserve.analysis.behavior.triggerInterval=3000
 
-org.iobserve.service.behavior.analysis.returnClustering=false
-org.iobserve.service.behavior.analysis.returnMedoids=true
+org.iobserve.service.behavior.analysis.returnClustering=true
+org.iobserve.service.behavior.analysis.returnMedoids=false
 org.iobserve.service.behavior.analysis.outputUrl=$RESULT_DIR/$EXPERIMENT_ID
 org.iobserve.service.behavior.analysis.epsilon=9
-org.iobserve.service.behavior.analysis.minPts=7
+org.iobserve.service.behavior.analysis.minPts=8
 org.iobserve.service.behavior.analysis.maxModelAmount=-1
 org.iobserve.service.behavior.analysis.nodeInsertionCost=80
 org.iobserve.service.behavior.analysis.edgeInsertionCost=30

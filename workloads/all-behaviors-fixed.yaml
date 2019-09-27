@@ -1,42 +1,61 @@
 # Example configuration
 ---
-activityDelay: 1
+activityDelay: 10
 webDriverConfiguration:
   baseUrl: http://172.17.0.2:8080/jpetstore/
   type: org.iobserve.selenium.driver.HtmlUnitDriverFactory
   driver: /home/lars/git/lars-juergensen-bsc/Experiments/tools/chromedriver
   timeout: 1000
 workloads:
-  - name: BrowsingUser
-    intensity:
-      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
-      name: BrowsingUser
-      spawnPerSecond: 0.1
-      durations: [ 100 ]
-  - name: SingleCatBuyerBehavior
-    intensity:
-      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
-      name: SingleCatBuyerBehavior
-      spawnPerSecond: 0.1
-      durations: [ 100 ]
   - name: AccountManager
     intensity:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
       name: AccountManager
       spawnPerSecond: 0.1
-      durations: [ 100 ]
+      durations: [ 100, 50 ]
+      delays: [ 50, 50 ]
+  - name: BrowsingUser
+    intensity:
+      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
+      name: BrowsingUser
+      spawnPerSecond: 0.1
+      durations: [ 100, 50 ]
+      delays: [ 50, 50 ]
   - name: CatLoverBehavior
     intensity:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
       name: CatLoverBehavior
       spawnPerSecond: 0.1
-      durations: [ 100 ]
+      durations: [ 100, 50 ]
+      delays: [ 50, 50 ]
+  - name: FishLoverBehavior
+    intensity:
+      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
+      name: FishLoverBehavior
+      spawnPerSecond: 0.1
+      durations: [ 100, 50 ]
+      delays: [ 50, 50 ]
+  - name: NewCustomerBehavior
+    intensity:
+      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
+      name: NewCustomerBehavior
+      spawnPerSecond: 0.1
+      durations: [ 100, 50 ]
+      delays: [ 50, 50 ]
+  - name: SingleCatBuyerBehavior
+    intensity:
+      type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
+      name: SingleCatBuyerBehavior
+      spawnPerSecond: 0.1
+      durations: [ 100, 50 ]
+      delays: [ 50, 50 ]
   - name: SingleReptileBuyerBehavior
     intensity:
       type: org.iobserve.selenium.configuration.ConstantWorkloadIntensity
       name: SingleReptileBuyerBehavior
       spawnPerSecond: 0.1
-      durations: [ 100 ]
+      durations: [ 100, 50 ]
+      delays: [ 50, 50 ]
 behaviors:
   AccountManager:
     name: AccountManager

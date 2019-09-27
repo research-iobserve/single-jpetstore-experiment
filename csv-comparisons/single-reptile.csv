@@ -1,8 +1,0 @@
-;base node;test node;base edge;test edge;base group;test group;base event;test event;node jaccard index; edge jaccard index; graph-edit-distance
-result-single-reptile-all-behaviors-fixed-with-delays_cluster_0;0;0;0;0;0;0;5;5;1.000000;1.000000;10.000000
-result-single-reptile-all-behaviors-fixed-with-delays_cluster_1;0;0;0;0;0;2;2;4;1.000000;1.000000;24.000000
-result-single-reptile-all-behaviors-fixed-with-delays_cluster_2;1;0;5;1;9;4;10;5;0.000000;0.400000;263.000000
-result-single-reptile-all-behaviors-fixed-with-delays_cluster_3;3;0;7;0;9;1;11;6;0.000000;0.222222;316.000000
-result-single-reptile-all-behaviors-fixed-with-delays_cluster_4;0;0;0;0;1;1;6;29;1.000000;1.000000;43.500000
-result-single-reptile-all-behaviors-fixed-with-delays_cluster_5;0;0;0;0;1;1;6;29;1.000000;1.000000;43.500000
-result-single-reptile-all-behaviors-fixed-with-delays_cluster_6;0;0;0;0;0;0;2;2;1.000000;1.000000;0.000000

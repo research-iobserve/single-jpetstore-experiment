@@ -1,1 +1,0 @@
-result-single-cat-all-behaviors-fixed-with-delays_cluster_6;0;0;0;0;0;0;5;5;1.000000;1.000000;10.000000

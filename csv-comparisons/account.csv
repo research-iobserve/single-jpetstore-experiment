@@ -1,8 +1,0 @@
-;base node;test node;base edge;test edge;base group;test group;base event;test event;node jaccard index; edge jaccard index; graph-edit-distance
-result-account-all-behaviors-fixed-with-delays_cluster_0;0;1;1;5;4;9;5;10;0.000000;0.400000;263.000000
-result-account-all-behaviors-fixed-with-delays_cluster_1;0;1;1;5;4;11;5;13;0.000000;0.400000;286.100000
-result-account-all-behaviors-fixed-with-delays_cluster_2;0;0;0;0;0;0;2;2;1.000000;1.000000;0.000000
-result-account-all-behaviors-fixed-with-delays_cluster_3;2;0;4;1;7;4;7;7;0.000000;0.166667;261.000000
-result-account-all-behaviors-fixed-with-delays_cluster_4;0;1;1;5;4;9;5;33;0.000000;0.400000;274.500000
-result-account-all-behaviors-fixed-with-delays_cluster_5;0;1;1;5;4;9;5;33;0.000000;0.400000;274.500000
-result-account-all-behaviors-fixed-with-delays_cluster_6;0;1;1;5;4;9;5;10;0.000000;0.400000;263.000000

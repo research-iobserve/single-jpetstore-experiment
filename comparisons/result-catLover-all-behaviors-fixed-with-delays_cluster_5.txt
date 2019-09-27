@@ -1,1 +1,0 @@
-result-catLover-all-behaviors-fixed-with-delays_cluster_5;0;0;0;0;1;0;3;2;1.000000;1.000000;16.000000

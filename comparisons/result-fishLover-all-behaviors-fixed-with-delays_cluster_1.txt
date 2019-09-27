@@ -1,1 +1,0 @@
-result-fishLover-all-behaviors-fixed-with-delays_cluster_1;0;0;0;0;1;2;26;7;1.000000;1.000000;55.300000

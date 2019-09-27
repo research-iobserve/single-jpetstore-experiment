@@ -1,0 +1,139 @@
+{
+  "nodes": {
+    "Init": {
+      "name": "Init"
+    },
+    "/jpetstore/actions/Catalog.action": {
+      "name": "/jpetstore/actions/Catalog.action"
+    }
+  },
+  "edges": [
+    {
+      "eventGroups": [
+        {
+          "parameters": [],
+          "events": [
+            {
+              "operationSignature": "/jpetstore/actions/Catalog.action",
+              "parameters": [],
+              "values": []
+            }
+          ]
+        }
+      ],
+      "source": {
+        "name": "Init"
+      },
+      "target": {
+        "name": "/jpetstore/actions/Catalog.action"
+      }
+    },
+    {
+      "eventGroups": [
+        {
+          "parameters": [
+            "viewCategory"
+          ],
+          "events": [
+            {
+              "operationSignature": "/jpetstore/actions/Catalog.action",
+              "parameters": [
+                "viewCategory",
+                "categoryId"
+              ],
+              "values": [
+                "",
+                "CATS"
+              ]
+            },
+            {
+              "operationSignature": "/jpetstore/actions/Catalog.action",
+              "parameters": [
+                "viewCategory",
+                "categoryId"
+              ],
+              "values": [
+                "",
+                "FISH"
+              ]
+            }
+          ]
+        },
+        {
+          "parameters": [
+            "viewProduct"
+          ],
+          "events": [
+            {
+              "operationSignature": "/jpetstore/actions/Catalog.action",
+              "parameters": [
+                "viewProduct",
+                "productId"
+              ],
+              "values": [
+                "",
+                "FL-DSH-01"
+              ]
+            },
+            {
+              "operationSignature": "/jpetstore/actions/Catalog.action",
+              "parameters": [
+                "viewProduct",
+                "productId"
+              ],
+              "values": [
+                "",
+                "FI-SW-01"
+              ]
+            }
+          ]
+        },
+        {
+          "parameters": [
+            "viewItem"
+          ],
+          "events": [
+            {
+              "operationSignature": "/jpetstore/actions/Catalog.action",
+              "parameters": [
+                "viewItem",
+                "itemId"
+              ],
+              "values": [
+                "",
+                "EST-1"
+              ]
+            },
+	    {
+              "operationSignature": "/jpetstore/actions/Catalog.action",
+              "parameters": [
+                "viewItem",
+                "itemId"
+              ],
+              "values": [
+                "",
+                "EST-14"
+              ]
+            }
+          ]
+        },
+        {
+          "parameters": [],
+          "events": [
+            {
+              "operationSignature": "/jpetstore/actions/Catalog.action",
+              "parameters": [],
+              "values": []
+            }
+          ]
+        }
+      ],
+      "source": {
+        "name": "/jpetstore/actions/Catalog.action"
+      },
+      "target": {
+        "name": "/jpetstore/actions/Catalog.action"
+      }
+    }
+  ]
+}

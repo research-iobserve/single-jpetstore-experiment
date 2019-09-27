@@ -1,1 +1,0 @@
-result-browser-all-behaviors-fixed-with-delays_cluster_6;0;3;0;7;1;9;6;11;0.000000;0.222222;316.000000
