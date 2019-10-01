@@ -49,7 +49,10 @@ for I in "$BASELINEFOLDER/"* ; do
 	for J in "$TESTFOLDER/"* ; do
 		COMPARE_NAME=`basename $J`
 		COMPARISON_FILE="$COMPARISON_DIR/result-$BASELINENAME-$COMPARE_NAME.txt"
-		$COMPARE_BEHAVIOR_MODELS -b "$I" -t "$J" -o "$COMPARISON_FILE" -s "ComparisonOutputStage"
+
+		# which of these lines is used, defines, whether the entire comparison data is returned or only a csv summary in form of a row.
+		$COMPARE_BEHAVIOR_MODELS -b "$I" -t "$J" -o "$COMPARISON_FILE" -s "CSVSummaryOutputStage"
+		# $COMPARE_BEHAVIOR_MODELS -b "$I" -t "$J" -o "$COMPARISON_FILE" -s "ComparisonOutputStage"
 		cat "$COMPARISON_FILE" >> "$OUTPUT"
 	done
 done

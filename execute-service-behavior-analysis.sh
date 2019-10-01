@@ -65,8 +65,8 @@ iobserve.analysis.behavior.IModelGenerationFilterFactory=org.iobserve.analysis.s
 
 iobserve.analysis.behavior.triggerInterval=3000
 
-org.iobserve.service.behavior.analysis.returnClustering=true
-org.iobserve.service.behavior.analysis.returnMedoids=false
+org.iobserve.service.behavior.analysis.returnClustering=false
+org.iobserve.service.behavior.analysis.returnMedoids=true
 org.iobserve.service.behavior.analysis.outputUrl=$RESULT_DIR/$EXPERIMENT_ID
 org.iobserve.service.behavior.analysis.epsilon=9
 org.iobserve.service.behavior.analysis.minPts=8
